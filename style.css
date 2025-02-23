@@ -1,0 +1,87 @@
+body {
+    color: black;
+    background: #44CFCB;
+    font-family: cursive, Arial;
+    padding-top: 10px; /* Spazio sopra */
+    padding-bottom: 20px; /* Spazio sotto */
+    padding-right: 25px; /* Spazio a destra */
+    padding-left: 25px; /* Spazio a sinistra */
+}
+
+h1 {
+    color: #122c34;
+}
+
+a {
+    color: #224870;
+}
+
+h2 {
+    color: #2A4494;
+}
+
+div {
+    background: #EDF2F4;
+    padding-top: 3px; /* Spazio sopra */
+    padding-bottom: 1px; /* Spazio sotto */
+    padding-right: 15px; /* Spazio a destra */
+    padding-left: 15px; /* Spazio a sinistra */
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* SETTING MENU BAR */
+
+.menu {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.button {
+    padding-top: 0px; /* Spazio sopra */
+    padding-bottom: 0px; /* Spazio sotto */
+    padding-right: 20px; /* Spazio a destra */
+    padding-left: 20px; /* Spazio a sinistra */
+    margin-bottom: 0px;
+}
+
+/* SETTING LIST OF EVENTS */
+
+.event-list {
+    max-width: 80%;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+.event {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd; /* Aggiunge un sottile bordo sotto */
+    box-shadow: none;
+}
+
+.date {
+    flex: 1;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 20px;
+    color: #555;
+    box-shadow: none;
+}
+
+.details {
+    flex: 2;
+    width: 80%;
+    box-shadow: none;
+}
+
+.place {
+    flex: 3;
+    box-shadow: none;
+}
