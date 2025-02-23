@@ -1,7 +1,7 @@
 body {
     color: black;
     background: #44CFCB;
-    font-family: cursive, Arial;
+    font-family: "Roboto", Arial, sans-serif;
     padding-top: 10px; /* Spazio sopra */
     padding-bottom: 20px; /* Spazio sotto */
     padding-right: 25px; /* Spazio a destra */
