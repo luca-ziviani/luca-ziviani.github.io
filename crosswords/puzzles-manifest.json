@@ -1,0 +1,16 @@
+{
+  "puzzles": [
+    {
+      "id": "SL1",
+      "title": "Parole crociate a schema libero",
+      "description": "Parole crociate a schema libero n° 1",
+      "file": "puzzle-SL1.json"
+    },
+    {
+      "id": "SO1",
+      "title": "Parole crociate a schema ordinato",
+      "description": "Parole crociate a schema ordinato n° 1",
+      "file": "puzzle-SO1.json"
+    }
+  ]
+}

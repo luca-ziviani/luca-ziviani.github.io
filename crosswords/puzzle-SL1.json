@@ -1,0 +1,782 @@
+{
+  "rows": 12,
+  "cols": 22,
+  "blocks": [
+    [ 0, 0 ],
+    [ 0, 4 ],
+    [ 0, 13 ],
+    [ 1, 1 ],
+    [ 1, 5 ],
+    [ 1, 15 ],
+    [ 1, 18 ],
+    [ 1, 19 ],
+    [ 2, 7 ],
+    [ 2, 12 ],
+    [ 2, 13 ],
+    [ 2, 15 ],
+    [ 3, 7 ],
+    [ 3, 8 ],
+    [ 3, 11 ],
+    [ 3, 14 ],
+    [ 3, 21 ],
+    [ 4, 1 ],
+    [ 4, 19 ],
+    [ 5, 0 ],
+    [ 5, 17 ],
+    [ 5, 19 ],
+    [ 6, 2 ],
+    [ 6, 20 ],
+    [ 7, 3 ],
+    [ 7, 6 ],
+    [ 7, 12 ],
+    [ 7, 20 ],
+    [ 8, 1 ],
+    [ 8, 4 ],
+    [ 8, 8 ],
+    [ 8, 13 ],
+    [ 8, 16 ],
+    [ 9, 12 ],
+    [ 9, 14 ],
+    [ 9, 19 ],
+    [ 10, 11 ],
+    [ 10, 18 ],
+    [ 11, 5 ],
+    [ 11, 9 ],
+    [ 11, 15 ]
+  ],
+  "solution": [
+    ".ETF.ESERCIZI.PESARESE",
+    "P.REM.HOMONOVUS.PS..OB",
+    "EVASIVA.ARGO..I.APRILE",
+    "SPUTNIK..TE.GN.AZIONI.",
+    "O.MIETITREBBIATRICE.TG",
+    ".RIVIERAADRIATICA.N.OR",
+    "GA.ORLANDOINNAMORATO.A",
+    "EFL.OL.TONGA.NOLEGGI.D",
+    "O.MM.AAA.OTRE.NA.IELLA",
+    "RIFOCILLARSI.A.IRAN.ES",
+    "GUARDALINEE.ALCOTT.BIS",
+    "ESOSA.EOS.NADIA.LIMITI"
+  ],
+  "cellNumbers": [
+    {
+      "row": 0,
+      "col": 1,
+      "num": 1
+    },
+    {
+      "row": 0,
+      "col": 2,
+      "num": 2
+    },
+    {
+      "row": 0,
+      "col": 3,
+      "num": 3
+    },
+    {
+      "row": 0,
+      "col": 5,
+      "num": 4
+    },
+    {
+      "row": 0,
+      "col": 6,
+      "num": 5
+    },
+    {
+      "row": 0,
+      "col": 7,
+      "num": 6
+    },
+    {
+      "row": 0,
+      "col": 8,
+      "num": 7
+    },
+    {
+      "row": 0,
+      "col": 9,
+      "num": 8
+    },
+    {
+      "row": 0,
+      "col": 10,
+      "num": 9
+    },
+    {
+      "row": 0,
+      "col": 11,
+      "num": 10
+    },
+    {
+      "row": 0,
+      "col": 12,
+      "num": 11
+    },
+    {
+      "row": 0,
+      "col": 14,
+      "num": 12
+    },
+    {
+      "row": 0,
+      "col": 16,
+      "num": 13
+    },
+    {
+      "row": 0,
+      "col": 17,
+      "num": 14
+    },
+    {
+      "row": 0,
+      "col": 20,
+      "num": 15
+    },
+    {
+      "row": 0,
+      "col": 21,
+      "num": 16
+    },
+    {
+      "row": 1,
+      "col": 0,
+      "num": 17
+    },
+    {
+      "row": 1,
+      "col": 2,
+      "num": 18
+    },
+    {
+      "row": 1,
+      "col": 4,
+      "num": 19
+    },
+    {
+      "row": 1,
+      "col": 6,
+      "num": 20
+    },
+    {
+      "row": 1,
+      "col": 16,
+      "num": 21
+    },
+    {
+      "row": 1,
+      "col": 20,
+      "num": 22
+    },
+    {
+      "row": 2,
+      "col": 0,
+      "num": 23
+    },
+    {
+      "row": 2,
+      "col": 1,
+      "num": 24
+    },
+    {
+      "row": 2,
+      "col": 5,
+      "num": 25
+    },
+    {
+      "row": 2,
+      "col": 8,
+      "num": 26
+    },
+    {
+      "row": 2,
+      "col": 16,
+      "num": 27
+    },
+    {
+      "row": 2,
+      "col": 18,
+      "num": 28
+    },
+    {
+      "row": 2,
+      "col": 19,
+      "num": 29
+    },
+    {
+      "row": 3,
+      "col": 0,
+      "num": 30
+    },
+    {
+      "row": 3,
+      "col": 9,
+      "num": 31
+    },
+    {
+      "row": 3,
+      "col": 12,
+      "num": 32
+    },
+    {
+      "row": 3,
+      "col": 13,
+      "num": 33
+    },
+    {
+      "row": 3,
+      "col": 15,
+      "num": 34
+    },
+    {
+      "row": 4,
+      "col": 2,
+      "num": 35
+    },
+    {
+      "row": 4,
+      "col": 7,
+      "num": 36
+    },
+    {
+      "row": 4,
+      "col": 8,
+      "num": 37
+    },
+    {
+      "row": 4,
+      "col": 11,
+      "num": 38
+    },
+    {
+      "row": 4,
+      "col": 14,
+      "num": 39
+    },
+    {
+      "row": 4,
+      "col": 20,
+      "num": 40
+    },
+    {
+      "row": 4,
+      "col": 21,
+      "num": 41
+    },
+    {
+      "row": 5,
+      "col": 1,
+      "num": 42
+    },
+    {
+      "row": 5,
+      "col": 20,
+      "num": 43
+    },
+    {
+      "row": 6,
+      "col": 0,
+      "num": 44
+    },
+    {
+      "row": 6,
+      "col": 3,
+      "num": 45
+    },
+    {
+      "row": 6,
+      "col": 17,
+      "num": 46
+    },
+    {
+      "row": 6,
+      "col": 19,
+      "num": 47
+    },
+    {
+      "row": 7,
+      "col": 0,
+      "num": 48
+    },
+    {
+      "row": 7,
+      "col": 2,
+      "num": 49
+    },
+    {
+      "row": 7,
+      "col": 4,
+      "num": 50
+    },
+    {
+      "row": 7,
+      "col": 7,
+      "num": 51
+    },
+    {
+      "row": 7,
+      "col": 13,
+      "num": 52
+    },
+    {
+      "row": 8,
+      "col": 2,
+      "num": 53
+    },
+    {
+      "row": 8,
+      "col": 3,
+      "num": 54
+    },
+    {
+      "row": 8,
+      "col": 5,
+      "num": 55
+    },
+    {
+      "row": 8,
+      "col": 6,
+      "num": 56
+    },
+    {
+      "row": 8,
+      "col": 9,
+      "num": 57
+    },
+    {
+      "row": 8,
+      "col": 14,
+      "num": 58
+    },
+    {
+      "row": 8,
+      "col": 17,
+      "num": 59
+    },
+    {
+      "row": 8,
+      "col": 20,
+      "num": 60
+    },
+    {
+      "row": 9,
+      "col": 0,
+      "num": 61
+    },
+    {
+      "row": 9,
+      "col": 1,
+      "num": 62
+    },
+    {
+      "row": 9,
+      "col": 4,
+      "num": 63
+    },
+    {
+      "row": 9,
+      "col": 8,
+      "num": 64
+    },
+    {
+      "row": 9,
+      "col": 13,
+      "num": 65
+    },
+    {
+      "row": 9,
+      "col": 15,
+      "num": 66
+    },
+    {
+      "row": 9,
+      "col": 16,
+      "num": 67
+    },
+    {
+      "row": 9,
+      "col": 20,
+      "num": 68
+    },
+    {
+      "row": 10,
+      "col": 0,
+      "num": 69
+    },
+    {
+      "row": 10,
+      "col": 12,
+      "num": 70
+    },
+    {
+      "row": 10,
+      "col": 14,
+      "num": 71
+    },
+    {
+      "row": 10,
+      "col": 19,
+      "num": 72
+    },
+    {
+      "row": 11,
+      "col": 0,
+      "num": 73
+    },
+    {
+      "row": 11,
+      "col": 6,
+      "num": 74
+    },
+    {
+      "row": 11,
+      "col": 10,
+      "num": 75
+    },
+    {
+      "row": 11,
+      "col": 16,
+      "num": 76
+    }
+  ],
+  "cluesAcross": [
+    {
+      "num": 1,
+      "text": "Fondi di investimento quotati sui mercati"
+    },
+    {
+      "num": 4,
+      "text": "Si fanno per acquistar pratica"
+    },
+    {
+      "num": 12,
+      "text": "Un concittadino di Rossini"
+    },
+    {
+      "num": 18,
+      "text": "Fase in cui si sogna molto"
+    },
+    {
+      "num": 20,
+      "text": "Lo furono Gaio Mario e Cicerone"
+    },
+    {
+      "num": 21,
+      "text": "In calce alla lettera"
+    },
+    {
+      "num": 22,
+      "text": "Il cuore dell'acrobata"
+    },
+    {
+      "num": 23,
+      "text": "Lo è la risposta che elude"
+    },
+    {
+      "num": 26,
+      "text": "Antica città della Grecia"
+    },
+    {
+      "num": 27,
+      "text": "Trenta giorni in primavera"
+    },
+    {
+      "num": 30,
+      "text": "Il primo satellite artificiale"
+    },
+    {
+      "num": 31,
+      "text": "Mettono fine alla lite"
+    },
+    {
+      "num": 32,
+      "text": "Abbreviazione della Genesi"
+    },
+    {
+      "num": 34,
+      "text": "Oscillano in Borsa"
+    },
+    {
+      "num": 35,
+      "text": "Grande macchina agricola"
+    },
+    {
+      "num": 40,
+      "text": "Informa i telespettatori"
+    },
+    {
+      "num": 42,
+      "text": "Comprende Rimini e Vasto"
+    },
+    {
+      "num": 43,
+      "text": "È quasi ora"
+    },
+    {
+      "num": 44,
+      "text": "Il gallio in laboratorio"
+    },
+    {
+      "num": 45,
+      "text": "Il capolavoro di Matteo Maria Boiardo"
+    },
+    {
+      "num": 48,
+      "text": "Lega professionistica del calcio inglese"
+    },
+    {
+      "num": 50,
+      "text": "Onde Lunghe"
+    },
+    {
+      "num": 51,
+      "text": "Le Isole degli Amici"
+    },
+    {
+      "num": 52,
+      "text": "Prestiti a pagamento"
+    },
+    {
+      "num": 53,
+      "text": "2.000 romani"
+    },
+    {
+      "num": 55,
+      "text": "Introducono annunci economici"
+    },
+    {
+      "num": 57,
+      "text": "Il recipiente dei venti"
+    },
+    {
+      "num": 58,
+      "text": "Una targa campana"
+    },
+    {
+      "num": 59,
+      "text": "Fa perdere al gioco"
+    },
+    {
+      "num": 61,
+      "text": "Ristorarsi con del cibo"
+    },
+    {
+      "num": 66,
+      "text": "Esporta tappeti pregiati"
+    },
+    {
+      "num": 68,
+      "text": "Si scrive per esempio"
+    },
+    {
+      "num": 69,
+      "text": "Collaborano con l'arbitro"
+    },
+    {
+      "num": 70,
+      "text": "Scrisse Piccole donne"
+    },
+    {
+      "num": 72,
+      "text": "Paganini non usava concederlo"
+    },
+    {
+      "num": 73,
+      "text": "Odiosamente avida"
+    },
+    {
+      "num": 74,
+      "text": "Una fotocamera della Canon"
+    },
+    {
+      "num": 75,
+      "text": "Nome di donna anagramma di Diana"
+    },
+    {
+      "num": 76,
+      "text": "Il cauto non li supera"
+    }
+  ],
+  "cluesDown": [
+    {
+      "num": 2,
+      "text": "Eventi che turbano"
+    },
+    {
+      "num": 3,
+      "text": "Un giorno di vacanza"
+    },
+    {
+      "num": 5,
+      "text": "Nota popstar colombiana"
+    },
+    {
+      "num": 6,
+      "text": "Il tragitto del Sole"
+    },
+    {
+      "num": 7,
+      "text": "Return Merchandise Authorization"
+    },
+    {
+      "num": 8,
+      "text": "Spazio dove si smontava di carrozza"
+    },
+    {
+      "num": 9,
+      "text": "Un Jakob mezzofondista norvegese"
+    },
+    {
+      "num": 10,
+      "text": "Un giardino tutto gabbie"
+    },
+    {
+      "num": 11,
+      "text": "Subito dopo III"
+    },
+    {
+      "num": 12,
+      "text": "Fu guidato da Craxi"
+    },
+    {
+      "num": 13,
+      "text": "Muoversi liberamente"
+    },
+    {
+      "num": 14,
+      "text": "Un piatto in gelatina"
+    },
+    {
+      "num": 15,
+      "text": "Il barista lo serve al cliente abituale"
+    },
+    {
+      "num": 16,
+      "text": "La sposa celeste di Eracle"
+    },
+    {
+      "num": 17,
+      "text": "Un dato del pugile"
+    },
+    {
+      "num": 19,
+      "text": "Un Atlético società calcistica"
+    },
+    {
+      "num": 24,
+      "text": "Stanno per Vice-Presidente"
+    },
+    {
+      "num": 25,
+      "text": "Fila di cuccette per bovini"
+    },
+    {
+      "num": 28,
+      "text": "Scoprì i raggi X"
+    },
+    {
+      "num": 29,
+      "text": "La quarta preposizione"
+    },
+    {
+      "num": 32,
+      "text": "Un nome di Bernini"
+    },
+    {
+      "num": 33,
+      "text": "Un profeta biblico"
+    },
+    {
+      "num": 34,
+      "text": "Si usa per dipanare"
+    },
+    {
+      "num": 36,
+      "text": "Un metallo per protesi"
+    },
+    {
+      "num": 37,
+      "text": "Poco folto"
+    },
+    {
+      "num": 38,
+      "text": "Corrono paralleli"
+    },
+    {
+      "num": 39,
+      "text": "L'inseparabile amico di Pumbaa"
+    },
+    {
+      "num": 41,
+      "text": "Coraggiosi solo a parole"
+    },
+    {
+      "num": 42,
+      "text": "L'aviazione di re Carlo III"
+    },
+    {
+      "num": 44,
+      "text": "L'Harrison dei Beatles"
+    },
+    {
+      "num": 46,
+      "text": "Non ricchi, ma quasi"
+    },
+    {
+      "num": 47,
+      "text": "Unge a New York"
+    },
+    {
+      "num": 49,
+      "text": "Lanciarono Party Rock Anthem"
+    },
+    {
+      "num": 54,
+      "text": "__ tua, vita mea: detto latino"
+    },
+    {
+      "num": 56,
+      "text": "Preposizione articolata"
+    },
+    {
+      "num": 60,
+      "text": "Il motiv che ritorna"
+    },
+    {
+      "num": 62,
+      "text": "__ soli: termine giuridico"
+    },
+    {
+      "num": 63,
+      "text": "Dirige una S.p.A."
+    },
+    {
+      "num": 64,
+      "text": "Un tasto sulla calcolatrice"
+    },
+    {
+      "num": 65,
+      "text": "I pinguini le usano per nuotare"
+    },
+    {
+      "num": 67,
+      "text": "La radio... 102.5"
+    },
+    {
+      "num": 70,
+      "text": "Cuore di lady"
+    },
+    {
+      "num": 71,
+      "text": "Il qui dei Napoletani"
+    },
+    {
+      "num": 72,
+      "text": "Un gruppo di vitamine"
+    }
+  ]
+}
+
+
+

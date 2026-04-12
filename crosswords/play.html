@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cruciverba</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="play-page">
+  <header class="play-top-bar">
+    <div class="play-top-bar-inner">
+      <nav aria-label="Navigazione">
+        <a class="play-back-link" href="crosswords.html">Torna al menu</a>
+      </nav>
+    </div>
+  </header>
+  <div class="play-layout">
+    <div class="page play-column">
+      <h1 id="play-title" class="play-title">Cruciverba</h1>
+      <div
+        class="crossword"
+        role="grid"
+        aria-label="Griglia del cruciverba"
+        tabindex="0"
+      ></div>
+      <div
+        class="direction-tools"
+        role="group"
+        aria-label="Direzione avanzamento dopo una lettera"
+      >
+        <button type="button" id="btn-orizz" aria-pressed="false">
+          Orizzontale
+        </button>
+        <button type="button" id="btn-vert" aria-pressed="false">
+          Verticale
+        </button>
+      </div>
+      <p id="solve-status" class="solve-status" aria-live="polite"></p>
+      <p id="load-hint" class="load-hint"></p>
+    </div>
+    <aside class="clues-panel" aria-label="Definizioni">
+      <div class="clues-columns">
+        <section
+          class="clues-block clues-block--across"
+          aria-labelledby="heading-across"
+        >
+          <h2 id="heading-across" class="clues-heading">Orizzontali</h2>
+          <ol id="clues-across" class="clues-list"></ol>
+        </section>
+        <section
+          class="clues-block clues-block--down"
+          aria-labelledby="heading-down"
+        >
+          <h2 id="heading-down" class="clues-heading">Verticali</h2>
+          <ol id="clues-down" class="clues-list"></ol>
+        </section>
+      </div>
+    </aside>
+  </div>
+  <script src="js/play.js"></script>
+</body>
+</html>

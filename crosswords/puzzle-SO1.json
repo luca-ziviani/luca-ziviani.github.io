@@ -1,0 +1,772 @@
+{
+  "rows": 12,
+  "cols": 22,
+  "blocks": [
+    [ 0, 0 ],
+    [ 0, 17 ],
+    [ 1, 1 ],
+    [ 1, 9 ],
+    [ 1, 15 ],
+    [ 1, 21 ],
+    [ 2, 7 ],
+    [ 2, 10 ],
+    [ 2, 14 ],
+    [ 2, 16 ],
+    [ 3, 0 ],
+    [ 3, 6 ],
+    [ 3, 11 ],
+    [ 3, 13 ],
+    [ 3, 20 ],
+    [ 4, 5 ],
+    [ 4, 12 ],
+    [ 4, 19 ],
+    [ 5, 4 ],
+    [ 5, 18 ],
+    [ 6, 3 ],
+    [ 6, 17 ],
+    [ 7, 2 ],
+    [ 7, 9 ],
+    [ 7, 16 ],
+    [ 8, 1 ],
+    [ 8, 8 ],
+    [ 8, 10 ],
+    [ 8, 15 ],
+    [ 8, 21 ],
+    [ 9, 5 ],
+    [ 9, 7 ],
+    [ 9, 11 ],
+    [ 9, 14 ],
+    [ 10, 0 ],
+    [ 10, 6 ],
+    [ 10, 12 ],
+    [ 10, 20 ],
+    [ 11, 4 ],
+    [ 11, 21 ]
+  ],
+  "solution": [
+    ".BUONSANVALENTINO.CACI",
+    "E.TROIANI.ISAIA.SPAZI.",
+    "LAICITA.SA.AVO.O.AVIDO",
+    ".ILARI.TIVU.E.ESILIO.D",
+    "ARIDE.SAGOME.ARANCE.EI",
+    "NOTI.NICOLASECONDO.RRO",
+    "ONA.CAPITANUNCINO.MEIS",
+    "RE.PESATI.ALTANA.MONNA",
+    "A.ALLORO.P.ERMA.TITAN.",
+    "KABUL.I.EOS.OU.COLONIE",
+    ".PETER.ARDUO.TRAFORI.T",
+    "TELO.LEGGIDIGAYLUSSAC."
+  ],
+  "cellNumbers": [
+    {
+      "row": 0,
+      "col": 1,
+      "num": 1
+    },
+    {
+      "row": 0,
+      "col": 2,
+      "num": 2
+    },
+    {
+      "row": 0,
+      "col": 3,
+      "num": 3
+    },
+    {
+      "row": 0,
+      "col": 4,
+      "num": 4
+    },
+    {
+      "row": 0,
+      "col": 5,
+      "num": 5
+    },
+    {
+      "row": 0,
+      "col": 6,
+      "num": 6
+    },
+    {
+      "row": 0,
+      "col": 7,
+      "num": 7
+    },
+    {
+      "row": 0,
+      "col": 8,
+      "num": 8
+    },
+    {
+      "row": 0,
+      "col": 10,
+      "num": 9
+    },
+    {
+      "row": 0,
+      "col": 11,
+      "num": 10
+    },
+    {
+      "row": 0,
+      "col": 12,
+      "num": 11
+    },
+    {
+      "row": 0,
+      "col": 13,
+      "num": 12
+    },
+    {
+      "row": 0,
+      "col": 14,
+      "num": 13
+    },
+    {
+      "row": 0,
+      "col": 16,
+      "num": 14
+    },
+    {
+      "row": 0,
+      "col": 18,
+      "num": 15
+    },
+    {
+      "row": 0,
+      "col": 19,
+      "num": 16
+    },
+    {
+      "row": 0,
+      "col": 20,
+      "num": 17
+    },
+    {
+      "row": 1,
+      "col": 0,
+      "num": 18
+    },
+    {
+      "row": 1,
+      "col": 2,
+      "num": 19
+    },
+    {
+      "row": 1,
+      "col": 10,
+      "num": 20
+    },
+    {
+      "row": 1,
+      "col": 16,
+      "num": 21
+    },
+    {
+      "row": 1,
+      "col": 17,
+      "num": 22
+    },
+    {
+      "row": 2,
+      "col": 0,
+      "num": 23
+    },
+    {
+      "row": 2,
+      "col": 1,
+      "num": 24
+    },
+    {
+      "row": 2,
+      "col": 8,
+      "num": 25
+    },
+    {
+      "row": 2,
+      "col": 9,
+      "num": 26
+    },
+    {
+      "row": 2,
+      "col": 11,
+      "num": 27
+    },
+    {
+      "row": 2,
+      "col": 15,
+      "num": 28
+    },
+    {
+      "row": 2,
+      "col": 17,
+      "num": 29
+    },
+    {
+      "row": 2,
+      "col": 21,
+      "num": 30
+    },
+    {
+      "row": 3,
+      "col": 1,
+      "num": 31
+    },
+    {
+      "row": 3,
+      "col": 7,
+      "num": 32
+    },
+    {
+      "row": 3,
+      "col": 10,
+      "num": 33
+    },
+    {
+      "row": 3,
+      "col": 14,
+      "num": 34
+    },
+    {
+      "row": 3,
+      "col": 16,
+      "num": 35
+    },
+    {
+      "row": 4,
+      "col": 0,
+      "num": 36
+    },
+    {
+      "row": 4,
+      "col": 6,
+      "num": 37
+    },
+    {
+      "row": 4,
+      "col": 11,
+      "num": 38
+    },
+    {
+      "row": 4,
+      "col": 13,
+      "num": 39
+    },
+    {
+      "row": 4,
+      "col": 20,
+      "num": 40
+    },
+    {
+      "row": 5,
+      "col": 0,
+      "num": 41
+    },
+    {
+      "row": 5,
+      "col": 5,
+      "num": 42
+    },
+    {
+      "row": 5,
+      "col": 12,
+      "num": 43
+    },
+    {
+      "row": 5,
+      "col": 19,
+      "num": 44
+    },
+    {
+      "row": 6,
+      "col": 0,
+      "num": 45
+    },
+    {
+      "row": 6,
+      "col": 4,
+      "num": 46
+    },
+    {
+      "row": 6,
+      "col": 18,
+      "num": 47
+    },
+    {
+      "row": 7,
+      "col": 0,
+      "num": 48
+    },
+    {
+      "row": 7,
+      "col": 3,
+      "num": 49
+    },
+    {
+      "row": 7,
+      "col": 10,
+      "num": 50
+    },
+    {
+      "row": 7,
+      "col": 17,
+      "num": 51
+    },
+    {
+      "row": 8,
+      "col": 2,
+      "num": 52
+    },
+    {
+      "row": 8,
+      "col": 9,
+      "num": 53
+    },
+    {
+      "row": 8,
+      "col": 11,
+      "num": 54
+    },
+    {
+      "row": 8,
+      "col": 16,
+      "num": 55
+    },
+    {
+      "row": 9,
+      "col": 0,
+      "num": 56
+    },
+    {
+      "row": 9,
+      "col": 1,
+      "num": 57
+    },
+    {
+      "row": 9,
+      "col": 8,
+      "num": 58
+    },
+    {
+      "row": 9,
+      "col": 10,
+      "num": 59
+    },
+    {
+      "row": 9,
+      "col": 12,
+      "num": 60
+    },
+    {
+      "row": 9,
+      "col": 15,
+      "num": 61
+    },
+    {
+      "row": 9,
+      "col": 21,
+      "num": 62
+    },
+    {
+      "row": 10,
+      "col": 1,
+      "num": 63
+    },
+    {
+      "row": 10,
+      "col": 5,
+      "num": 64
+    },
+    {
+      "row": 10,
+      "col": 7,
+      "num": 65
+    },
+    {
+      "row": 10,
+      "col": 11,
+      "num": 66
+    },
+    {
+      "row": 10,
+      "col": 13,
+      "num": 67
+    },
+    {
+      "row": 10,
+      "col": 14,
+      "num": 68
+    },
+    {
+      "row": 11,
+      "col": 0,
+      "num": 69
+    },
+    {
+      "row": 11,
+      "col": 5,
+      "num": 70
+    }
+  ],
+  "cluesAcross": [
+    {
+      "num": 1,
+      "text": "Lo si augura il 14 febbraio"
+    },
+    {
+      "num": 15,
+      "text": "I formaggi in genere"
+    },
+    {
+      "num": 19,
+      "text": "Accolsero un cavallo di legno"
+    },
+    {
+      "num": 20,
+      "text": "Il profeta che fu segato a metà"
+    },
+    {
+      "num": 21,
+      "text": "Si lasciano fra le parole scritte"
+    },
+    {
+      "num": 23,
+      "text": "Condizione di estraneità al clero"
+    },
+    {
+      "num": 25,
+      "text": "In mezzo ai bersagli"
+    },
+    {
+      "num": 27,
+      "text": "Lontano predecessore"
+    },
+    {
+      "num": 29,
+      "text": "Lo è chi non si accontenta mai"
+    },
+    {
+      "num": 31,
+      "text": "Contenti, ridenti"
+    },
+    {
+      "num": 32,
+      "text": "La televisione in breve"
+    },
+    {
+      "num": 34,
+      "text": "L'espatrio forzato"
+    },
+    {
+      "num": 36,
+      "text": "Riarse, brulle"
+    },
+    {
+      "num": 37,
+      "text": "Bersagli da poligono di tiro"
+    },
+    {
+      "num": 39,
+      "text": "Le esporta la Sicilia"
+    },
+    {
+      "num": 40,
+      "text": "L'incipit de Il cinque maggio"
+    },
+    {
+      "num": 41,
+      "text": "Celebri, famosi"
+    },
+    {
+      "num": 42,
+      "text": "Fu l'ultimo zar di Russia"
+    },
+    {
+      "num": 44,
+      "text": "Codice dell'aeroporto di Sorrento"
+    },
+    {
+      "num": 45,
+      "text": "Un suffisso accrescitivo"
+    },
+    {
+      "num": 46,
+      "text": "Perseguita Peter Pan"
+    },
+    {
+      "num": 47,
+      "text": "Il cognome assunto dal pirandelliano Mattia Pascal"
+    },
+    {
+      "num": 48,
+      "text": "C'è sia in Spagna che in Olanda"
+    },
+    {
+      "num": 49,
+      "text": "Valutati sulla bilancia"
+    },
+    {
+      "num": 50,
+      "text": "Loggia coperta sopra il tetto"
+    },
+    {
+      "num": 51,
+      "text": "La Lisa leonardesca"
+    },
+    {
+      "num": 52,
+      "text": "La pianta per chi si è laureato"
+    },
+    {
+      "num": 54,
+      "text": "Testa marmorea su pilastro"
+    },
+    {
+      "num": 55,
+      "text": "Sommergibile imploso nel 2023"
+    },
+    {
+      "num": 56,
+      "text": "La capitale dell'Afghanistan"
+    },
+    {
+      "num": 58,
+      "text": "Una macchina della Canon"
+    },
+    {
+      "num": 60,
+      "text": "Oppure a Marsiglia"
+    },
+    {
+      "num": 61,
+      "text": "Possedimenti d'oltremare"
+    },
+    {
+      "num": 63,
+      "text": "Il capofamiglia dei Griffin dei cartoni"
+    },
+    {
+      "num": 65,
+      "text": "Difficile da compiersi"
+    },
+    {
+      "num": 67,
+      "text": "Gallerie ferroviarie"
+    },
+    {
+      "num": 69,
+      "text": "Lo stende chi fa il picnic"
+    },
+    {
+      "num": 70,
+      "text": "Descrivono trasformazioni isobare e isocore"
+    }
+  ],
+  "cluesDown": [
+    {
+      "num": 2,
+      "text": "Non ne ha il pezzo inservibile"
+    },
+    {
+      "num": 3,
+      "text": "Isole della Scozia"
+    },
+    {
+      "num": 4,
+      "text": "\u00c8 nera in Francia"
+    },
+    {
+      "num": 5,
+      "text": "Posti... su Internet"
+    },
+    {
+      "num": 6,
+      "text": "La sigla delle pile mini-stilo"
+    },
+    {
+      "num": 7,
+      "text": "\u00c8 non nelle chat"
+    },
+    {
+      "num": 8,
+      "text": "Saccheggiarono Roma nel 410"
+    },
+    {
+      "num": 9,
+      "text": "Cinquantuno romani"
+    },
+    {
+      "num": 10,
+      "text": "L'Ente spaziale europeo"
+    },
+    {
+      "num": 11,
+      "text": "Ha il ponte sulla coperta"
+    },
+    {
+      "num": 12,
+      "text": "Lo zio spagnolo"
+    },
+    {
+      "num": 13,
+      "text": "Il dittongo in Emilia"
+    },
+    {
+      "num": 14,
+      "text": "La bocca... dei latini"
+    },
+    {
+      "num": 15,
+      "text": "Animali da laboratori scientifici"
+    },
+    {
+      "num": 16,
+      "text": "Una vittoria di Ottaviano"
+    },
+    {
+      "num": 17,
+      "text": "Fu detto Campeador"
+    },
+    {
+      "num": 18,
+      "text": "L'articolo di Alamein"
+    },
+    {
+      "num": 22,
+      "text": "\u00c8 più elevato della platea"
+    },
+    {
+      "num": 24,
+      "text": "L'uccello guardabuoi"
+    },
+    {
+      "num": 26,
+      "text": "La città siciliana del vino Nero"
+    },
+    {
+      "num": 28,
+      "text": "Biblico grido di esultanza"
+    },
+    {
+      "num": 30,
+      "text": "Più che antipatica"
+    },
+    {
+      "num": 32,
+      "text": "Ci lasciò famosi Annali"
+    },
+    {
+      "num": 33,
+      "text": "La razza che ci comprende tutti"
+    },
+    {
+      "num": 34,
+      "text": "Lo fu Anita Garibaldi"
+    },
+    {
+      "num": 35,
+      "text": "Scorre nel Pakistan"
+    },
+    {
+      "num": 36,
+      "text": "Un tipo di giacca col cappuccio"
+    },
+    {
+      "num": 37,
+      "text": "Calano a teatro"
+    },
+    {
+      "num": 38,
+      "text": "Così morì Carlo Alberto"
+    },
+    {
+      "num": 39,
+      "text": "Si scrive ma non si pronuncia"
+    },
+    {
+      "num": 40,
+      "text": "Le mitologiche Furie greche"
+    },
+    {
+      "num": 42,
+      "text": "C'è chi lo ficca dappertutto"
+    },
+    {
+      "num": 43,
+      "text": "Fissa un termine massimo"
+    },
+    {
+      "num": 44,
+      "text": "Regione storica della Germania"
+    },
+    {
+      "num": 46,
+      "text": "Le camerette dei frati"
+    },
+    {
+      "num": 47,
+      "text": "La M delle auto marcate GM"
+    },
+    {
+      "num": 49,
+      "text": "Il cane di Topolino"
+    },
+    {
+      "num": 51,
+      "text": "Il Forman regista"
+    },
+    {
+      "num": 52,
+      "text": "Niels Henrik, illustre matematico norvegese"
+    },
+    {
+      "num": 53,
+      "text": "Le pedane da premiazioni"
+    },
+    {
+      "num": 55,
+      "text": "Il formaggio di soia"
+    },
+    {
+      "num": 57,
+      "text": "Un veicolo Piaggio"
+    },
+    {
+      "num": 58,
+      "text": "Unità fisica del lavoro"
+    },
+    {
+      "num": 59,
+      "text": "Mezzogiorno geografico"
+    },
+    {
+      "num": 61,
+      "text": "Caloria in breve"
+    },
+    {
+      "num": 62,
+      "text": "Congiunzione disusata"
+    },
+    {
+      "num": 64,
+      "text": "Le ali... del Real"
+    },
+    {
+      "num": 65,
+      "text": "L'argento nelle formule"
+    },
+    {
+      "num": 66,
+      "text": "Una... vittoria in trasferta"
+    },
+    {
+      "num": 68,
+      "text": "Seguono la Q e la X"
+    }
+
+  ]
+}
+
+
+
