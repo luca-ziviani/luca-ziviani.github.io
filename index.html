@@ -1,51 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luca Ziviani - PhD student in Mathematics at Paris Dauphine, specializing in PDEs and kinetic theory.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%2344CFCB'/><text x='50' y='60' font-size='50' font-weight='bold' text-anchor='middle' fill='%23122c34'>L</text></svg>">
     <title>
         Luca Ziviani
     </title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
     <body>
-        <div style="display: flex; justify-content: space-between;">
-            <div style="width: 25%; text-align: center; ">
+        <header>
+            <div>
                 <h1>Luca Ziviani</h1>
-                <div id="contenuto">
+                <nav class="main-menu">
                     <a href="cv.html"><h3>Curriculum vitae</h3></a>
                     <a href="publications.html"><h3>Publications</h3></a>
                     <a href="teaching.html"><h3>Teaching</h3></a>
                     <a href="conferences.html"><h3>Talks and conferences</h3></a>
-                </div>
+                </nav>
             </div>
-            <div id="testata" style="text-align: center; width: 75%;">
-                <img src="Immagine4-min.jpg" alt="sfondo" style="width: 80%;">
+            <div>
+                <img src="Immagine4-min.jpg" alt="Luca Ziviani - PhD student at Paris Dauphine">
             </div>
-        </div>
+        </header>
         
-        <div id="presentazione">
-            <p>
-                I am a PhD student in mathematics since September 2022 at <a href="https://www.ceremade.dauphine.fr/">CEREMADE</a>,
-                <a href="https://dauphine.psl.eu/">Universit&#233 Paris Dauphine</a>, under the supervision of <a href="https://www.ceremade.dauphine.fr/~bouin/">Emeric Bouin</a>
-                in the frame of the <a href="https://sciencesmaths-paris.fr/nos-programmes/master?id=132">COFUND MathInParis2020</a> doctoral training program.
-            </p>
-            <p>
-                From 2020 to 2022, I participated in the <a href="https://web.math.unipd.it/mappawp/">MAPPA double degree program</a>, jointly operated by University of Padova and University Paris Sciences & Lettres.
-            </p>
-            <h3>Research interests</h3>
-            <p>
+        <main id="presentazione">
+            <section>
+                <p>
+                    I am a PhD student in mathematics since September 2022 at <a href="https://www.ceremade.dauphine.fr/">CEREMADE</a>,
+                    <a href="https://dauphine.psl.eu/">Universit&#233 Paris Dauphine</a>, under the supervision of <a href="https://www.ceremade.dauphine.fr/~bouin/">Emeric Bouin</a>
+                    in the frame of the <a href="https://sciencesmaths-paris.fr/nos-programmes/master?id=132">COFUND MathInParis2020</a> doctoral training program.
+                </p>
+                <p>
+                    From 2020 to 2022, I participated in the <a href="https://web.math.unipd.it/mappawp/">MAPPA double degree program</a>, jointly operated by University of Padova and University Paris Sciences & Lettres.
+                </p>
+            </section>
+            <section>
+                <h3>Research field</h3>
                 <ul>
                     <li>Partial differential equations</li>
                     <li>Kinetic theory</li>
                     <li>Long time behavior of evolution equations</li>
                 </ul>
-            </p>
-            <div style="display: flex; gap: 40px;">
-                <a href="https://github.com/luca-ziviani/SEMES-project-2026"><h4>SEMES project</h4></a>
-                <a href="manim.html"><h4>Manim clips</h4></a>
-                <a href="crosswords/crosswords.html"><h4>Crosswords</h4></a>
-            </div>
-        </div>
-        <div id="piedipagina">
+            </section>
+            <section>
+                <h3>Other projects</h3>
+                <nav style="display: flex; gap: var(--spacing-xxl); flex-wrap: wrap;">
+                    <a href="https://github.com/luca-ziviani/SEMES-project-2026"><h4>SEMES project</h4></a>
+                    <a href="manim.html"><h4>Manim clips</h4></a>
+                    <a href="crosswords/crosswords.html"><h4>Crosswords</h4></a>
+                </nav>
+            </section>
+        </main>
+        <footer id="piedipagina">
             <h3>Contacts</h3>
             <p>
                 Office N° F505<br>
@@ -53,6 +63,6 @@
                 <b>E-mail:</b> ziviani[at]ceremade[dot]dauphine[dot]fr
                 <b>Github:</b> <a href="https://github.com/luca-ziviani"> luca-ziviani </a>
             </p>
-        </div>
+        </footer>
     </body>
 </html>

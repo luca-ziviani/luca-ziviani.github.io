@@ -1,18 +1,46 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Interactive crossword puzzles - Parole crociate">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%2344CFCB'/><text x='50' y='60' font-size='50' font-weight='bold' text-anchor='middle' fill='%23122c34'>L</text></svg>">
   <title>Parole crociate – Scegli un schema</title>
+  <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="../script.js"></script>
 </head>
-<body class="menu-page">
-  <header class="menu-header">
-    <h1>Parole crociate</h1>
-    <p>Scegli uno schema per iniziare. </p>
-  </header>
-  <ul id="puzzle-list" class="puzzle-list" aria-label="Elenco cruciverba"></ul>
-  <p id="menu-error" class="load-hint" hidden></p>
+<body>
+  <nav class="menu">
+    <a href="../index.html" class="button"><h3>Home</h3></a>
+        <a href="../cv.html" class="button"><h3>Curriculum vitae</h3></a>
+        <a href="../publications.html" class="button"><h3>Publications</h3></a>
+        <a href="../teaching.html" class="button"><h3>Teaching</h3></a>
+        <a href="../conferences.html" class="button"><h3>Talks and conferences</h3></a>
+  </nav>
+
+  <div class="crosswords-layout">
+ 
+    <!-- ── Left: title + explanation ── -->
+    <section class="crosswords-intro">
+      <h1>Crosswords</h1>
+      <div class="crosswords-description">
+        <!-- Inserisci qui il testo di spiegazione -->
+        I am passionate about crossword puzzles, and I have created this website to share my love for them.
+        Here you can find a collection of interactive crosswords that I have designed and implemented. Each puzzle is crafted with care, offering a unique challenge for crossword enthusiasts of all levels. Whether you're a beginner or an experienced solver, I hope you enjoy exploring these puzzles as much as I enjoyed creating them.
+        Happy solving!
+      </div>
+    </section>
+ 
+    <!-- ── Right: puzzle selector ── -->
+    <aside class="crosswords-selector">
+      <h2>Choose a puzzle</h2>
+      <ul id="puzzle-list" class="puzzle-list" aria-label="Elenco cruciverba"></ul>
+      <p id="menu-error" class="load-hint" hidden></p>
+    </aside>
+ 
+  </div>
+  
   <script src="js/menu.js"></script>
 </body>
 </html>

@@ -11,6 +11,12 @@
       "title": "Parole crociate a schema ordinato",
       "description": "Parole crociate a schema ordinato n° 1",
       "file": "puzzle-SO1.json"
+    },
+    {
+      "id": "SS1",
+      "title": "Parole crociate senza schema",
+      "description": "Parole crociate senza schema n° 1",
+      "file": "puzzle-SS1.json"
     }
   ]
 }

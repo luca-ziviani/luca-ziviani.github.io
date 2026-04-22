@@ -1,4 +1,5 @@
 {
+  "type": "senza-schema",
   "rows": 12,
   "cols": 22,
   "blocks": [
@@ -62,42 +63,144 @@
     ".GEOGRAFO.BONSAI.SPOSI"
   ],
   "cluesAcross": [
-    "PuÚ essere abrogativo ñ Permette l'accesso - Ricordano i clarinetti",
-    "Misura l'acidit‡ - Lo cela l'esca ñ La durata di un famoso giro del mondo",
-    "I filosofi... cavillosi ñ Appariscente, sfarzosa - Stato con Vientiane",
-    "Termine golfistico - Il simbolo dell'hertz - » l'ultima della scala ñ Sette francesi - Iniziali di Bowie",
-    "Costituiscono la materia ñ Un'arte marziale coreana - Scrisse Il corvo",
-    "Il killer a ripetizione - Un appellativo per Roma - Fece parte degli Eagles",
-    "Porto della penisola di Malacca ñ Iniziali di Morricone - La mosca degli Ulivi",
-    "Nota trilogia fantasy",
-    "Vi vaga Alice",
-    "Un indice da epidemie ñ Bandire, espellere - Era anche Minore ñ Messi, l'asso del pallone",
-    "La fuga di Maometto - Prima nei prefissi - Il colle di Gerusalemme",
-    "Fa le carte con la scala - Gli alberi, in miniatura - Sono promessi quelli del Manzoni"
+    {
+      "row": 0,
+      "text": "Pu√≤ essere abrogativo - Permette l'accesso - Ricordano i clarinetti"
+    },
+    {
+      "row": 1,
+      "text": "Misura l'acidit√≤ - Lo cela l'esca - La durata di un famoso giro del mondo"
+    },
+    {
+      "row": 2,
+      "text": "I filosofi... cavillosi - Appariscente, sfarzosa - Stato con Vientiane"
+    },
+    {
+      "row": 3,
+      "text": "Termine golfistico - Il simbolo dell'hertz - √à l'ultima della scala - Sette francesi - Iniziali di Bowie"
+    },
+    {
+      "row": 4,
+      "text": "Costituiscono la materia - Un'arte marziale coreana - Scrisse Il corvo"
+    },
+    {
+      "row": 5,
+      "text": "Il killer a ripetizione - Un appellativo per Roma - Fece parte degli Eagles"
+    },
+    {
+      "row": 6,
+      "text": "Porto della penisola di Malacca - Iniziali di Morricone - La mosca degli Ulivi"
+    },
+    {
+      "row": 7,
+      "text": "Nota trilogia fantasy"
+    },
+    {
+      "row": 8,
+      "text": "Vi vaga Alice"
+    },
+    {
+      "row": 9,
+      "text": "Un indice da epidemie - Bandire, espellere - Era anche Minore - Messi, l'asso del pallone"
+    },
+    {
+      "row": 10,
+      "text": "La fuga di Maometto - Prima nei prefissi - Il colle di Gerusalemme"
+    },
+    {
+      "row": 11,
+      "text": "Fa le carte con la scala - Gli alberi, in miniatura - Sono promessi quelli del Manzoni"
+    }
   ],
   "cluesDown": [
-    "Due muscoli lombari - __ dixit: espressione latina",
-    "  2. Precede il sigma - Nikola che fu fisico ñ Iniziali di Gaber",
-    "  3. Un'auto in pochi esemplari",
-    "  4. La Polizia di X-Files - Alta carica di Stato",
-    "  5. Si popolano d'estate ñ L'argento nelle formule",
-    "  6. Frazione di pagamento ñ Zone desolate",
-    "  7. Il regista Kusturica - L'arte con i versi",
-    "  8. Spiace riceverlo - Si strapazzano con le chiare",
-    "  9. Il Williams di Happy",
-    "10. Sono diverse in tutto ñ Si rompono seccando",
-    "11. Un canale di videoclip ñ Il Kenia sui siti Internet - Un fiume del Chianti",
-    "12. A te ñ Linguaggio convenzionale",
-    "13. Divide la val Seriana da Valcanale",
-    "14. Contraddizione palese ñ L'arsenico del chimico",
-    "15. Molti lo dicono per sono ñ Il DNA senza l'acido ñ Un sigaro cubano",
-    "16. Jazzisti che soffiano",
-    "17. La Aulenti noto architetto - Goethe scrisse le romane",
-    "18. Una... vittoria in trasferta ñ Tipo di giunzione per il legno",
-    "19. Usain dell'atletica leggera ñ Dipinse gli orologi molli ñ Le scarpe meno care",
-    "20. Quella X Ë segreta ñ La Terra ci passa all'inizio di gennaio",
-    "21. Lo sono i fiori finti ñ L'Aurora greca",
-    "22. Abitazioni rurali russe ñ Agiscono sui dendriti"
+    {
+      "col": 0,
+      "text": "Due muscoli lombari - __ dixit: espressione latina"
+    },
+    {
+      "col": 1,
+      "text": "Precede il sigma - Nikola che fu fisico - Iniziali di Gaber"
+    },
+    {
+      "col": 2,
+      "text": "Un'auto in pochi esemplari"
+    },
+    {
+      "col": 3,
+      "text": "La Polizia di X-Files - Alta carica di Stato"
+    },
+    {
+      "col": 4,
+      "text": "Si popolano d'estate - L'argento nelle formule"
+    },
+    {
+      "col": 5,
+      "text": "Frazione di pagamento - Zone desolate"
+    },
+    {
+      "col": 6,
+      "text": "Il regista Kusturica - L'arte con i versi"
+    },
+    {
+      "col": 7,
+      "text": "Spiace riceverlo - Si strapazzano con le chiare"
+    },
+    {
+      "col": 8,
+      "text": "Il Williams di Happy"
+    },
+    {
+      "col": 9,
+      "text": "Sono diverse in tutto - Si rompono seccando"
+    },
+    {
+      "col": 10,
+      "text": "Un canale di videoclip - Il Kenia sui siti Internet - Un fiume del Chianti"
+    },
+    {
+      "col": 11,
+      "text": "A te - Linguaggio convenzionale"
+    },
+    {
+      "col": 12,
+      "text": "Divide la val Seriana da Valcanale"
+    },
+    {
+      "col": 13,
+      "text": "Contraddizione palese - L'arsenico del chimico"
+    },
+    {
+      "col": 14,
+      "text": "Molti lo dicono per sono - Il DNA senza l'acido - Un sigaro cubano"
+    },
+    {
+      "col": 15,
+      "text": "Jazzisti che soffiano"
+    },
+    {
+      "col": 16,
+      "text": "La Aulenti noto architetto - Goethe scrisse le romane"
+    },
+    {
+      "col": 17,
+      "text": "Una... vittoria in trasferta - Tipo di giunzione per il legno"
+    },
+    {
+      "col": 18,
+      "text": "Usain dell'atletica leggera - Dipinse gli orologi molli - Le scarpe meno care"
+    },
+    {
+      "col": 19,
+      "text": "Quella X √® segreta - La Terra ci passa all'inizio di gennaio"
+    },
+    {
+      "col": 20,
+      "text": "Lo sono i fiori finti - L'Aurora greca"
+    },
+    {
+      "col": 21,
+      "text": "Abitazioni rurali russe - Agiscono sui dendriti"
+    }
   ]
 }
 

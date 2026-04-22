@@ -1,69 +1,206 @@
+:root {
+    /* Colors */
+    --primary-color: #c5f3f6; /*#44CFDD  #00FFFF ;*/
+    --secondary-color: #EDF2F4;
+    --text-color: #000000;
+    --heading-color: #122c34;
+    --link-color: #224870;
+    --link-hover-color: #0f2a38;
+    --accent-color: #2A4494;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    --border-color: #ddd;
+    --event-bg: #ffffff;
+    --date-text: #555;
+
+    /* Spacing */
+    --spacing-xs: 5px;
+    --spacing-sm: 10px;
+    --spacing-md: 15px;
+    --spacing-lg: 20px;
+    --spacing-xl: 25px;
+    --spacing-xxl: 40px;
+
+    /* Transitions */
+    --transition-speed: 0.3s;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-color: #1a3a3a;
+        --secondary-color: #2a2a2a;
+        --text-color: #e0e0e0;
+        --heading-color: #b0d0d0;
+        --link-color: #88d0ff;
+        --link-hover-color: #ffcc99;
+        --accent-color: #88bbff;
+        --event-bg: #333333;
+        --date-text: #aaa;
+    }
+}
+
 body {
-    color: black;
-    background: #44CFCB;
+    color: var(--text-color);
+    background: var(--primary-color);
     font-family: "Roboto", Arial, sans-serif;
-    padding-top: 10px; /* Spazio sopra */
-    padding-bottom: 20px; /* Spazio sotto */
-    padding-right: 25px; /* Spazio a destra */
-    padding-left: 25px; /* Spazio a sinistra */
+    padding: var(--spacing-xl) var(--spacing-xl) var(--spacing-lg) var(--spacing-xl);
+    margin: 0;
+    transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
 }
 
 h1 {
-    color: #122c34;
-}
-
-a {
-    color: #224870;
+    color: var(--heading-color);
+    margin: var(--spacing-md) 0;
 }
 
 h2 {
-    color: #2A4494;
+    color: var(--accent-color);
+    margin: var(--spacing-md) 0;
 }
 
-div {
-    background: #EDF2F4;
-    padding-top: 3px; /* Spazio sopra */
-    padding-bottom: 1px; /* Spazio sotto */
-    padding-right: 15px; /* Spazio a destra */
-    padding-left: 15px; /* Spazio a sinistra */
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+h3 {
+    margin: var(--spacing-md) 0;
 }
 
-/* SETTING MENU BAR */
+h4 {
+    margin: var(--spacing-sm) 0;
+}
 
-.menu {
+a {
+    color: var(--link-color);
+    transition: color var(--transition-speed) ease, text-decoration var(--transition-speed) ease;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: 2px solid var(--link-color);
+    outline-offset: 2px;
+}
+
+section {
+    background: var(--secondary-color);
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+    border-radius: 4px;
+    box-shadow: 0 2px 5px var(--shadow-color);
+}
+
+
+header {
+    background: var(--secondary-color);
+    padding: var(--spacing-md);
+    border-radius: 4px;
+    box-shadow: 0 2px 5px var(--shadow-color);
+    margin-bottom: var(--spacing-lg);
     display: flex;
-    margin-bottom: 20px;
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    gap: var(--spacing-lg);
+    flex-wrap: wrap;
+}
+
+header > div:first-child {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+header > div:last-child {
+    flex: 1.5;
+    text-align: center;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+footer {
+    background: var(--secondary-color);
+    padding: var(--spacing-md);
+    border-radius: 4px;
+    box-shadow: 0 2px 5px var(--shadow-color);
+    margin-top: var(--spacing-lg);
+}
+
+/* ----------------------- Navigation ----------------------- */
+
+nav.main-menu {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+    padding: var(--spacing-lg);
+    background: var(--secondary-color);
+    border-radius: 4px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+nav.menu {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+    padding: var(--spacing-sm);
+    background: var(--secondary-color);
+    border-radius: 4px;
+    box-shadow: 0 2px 5px var(--shadow-color);
+    flex-wrap: wrap;
 }
 
 .button {
-    padding-top: 0px; /* Spazio sopra */
-    padding-bottom: 0px; /* Spazio sotto */
-    padding-right: 20px; /* Spazio a destra */
-    padding-left: 20px; /* Spazio a sinistra */
-    margin-bottom: 0px;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    transition: background-color var(--transition-speed) ease;
 }
 
-/* SETTING LIST OF EVENTS */
+.button:hover {
+    background-color: var(--primary-color);
+}
+
+.button h3 {
+    margin: 0;
+    transition: color var(--transition-speed) ease;
+}
+
+.button a {
+    text-decoration: none;
+}
+
+.button a:hover h3 {
+    color: var(--link-hover-color);
+}
+
+/* ----------------------- CONFERENCES.HTML ----------------------- */
 
 .event-list {
-    max-width: 80%;
-    margin: 0 auto;
-    background: white;
-    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto var(--spacing-lg);
+    background: var(--event-bg);
+    padding: var(--spacing-sm);
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    margin-bottom: 10px;
+    box-shadow: 0 2px 5px var(--shadow-color);
+}
+
+.event-list h2 {
+    margin: var(--spacing-md) 0;
+    color: var(--accent-color);
+    text-align: center;
 }
 
 .event {
     display: flex;
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd; /* Aggiunge un sottile bordo sotto */
-    box-shadow: none;
+    padding: var(--spacing-md) 0;
+    border-bottom: 1px solid var(--border-color);
+    gap: var(--spacing-md);
+}
+
+.event:last-child {
+    border-bottom: none;
 }
 
 .date {
@@ -71,7 +208,7 @@ div {
     font-weight: bold;
     text-align: right;
     padding-right: 20px;
-    color: #555;
+    color: var(--date-text);
     box-shadow: none;
 }
 
@@ -84,4 +221,137 @@ div {
 .place {
     flex: 3;
     box-shadow: none;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    body {
+        padding: var(--spacing-md);
+    }
+
+    header {
+        flex-direction: column;
+        padding: var(--spacing-md);
+    }
+
+    header > div:first-child,
+    header > div:last-child {
+        flex: 1;
+        min-width: 100%;
+    }
+
+    nav.menu {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+
+    .button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .event-list {
+        max-width: 100%;
+    }
+
+    .event {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        padding: var(--spacing-md) 0;
+    }
+
+    .date {
+        text-align: left;
+        flex: none;
+    }
+
+    .details,
+    .place {
+        text-align: left;
+        flex: none;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: var(--spacing-md);
+    }
+
+    section {
+        padding: var(--spacing-md);
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+}
+
+
+/* ----------------------- CROSSWORDS.HTML ----------------------- */
+
+/* ── Two-column layout ── */
+    .crosswords-layout {
+      display: flex;
+      gap: 2.5rem;
+      align-items: flex-start;
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+ 
+    /* ── Left panel ── */
+    .crosswords-intro {
+      flex: 1 1 0;
+      min-width: 0;
+    }
+ 
+    .crosswords-intro h1 {
+      margin-top: 0;
+    }
+ 
+    .crosswords-description {
+      /* Placeholder block for the explanation text */
+      margin-top: 1rem;
+      line-height: 1.7;
+      /* Remove or replace with actual text later */
+      color: inherit;
+    }
+ 
+    /* Subtle placeholder styling so it's visible while empty */
+    .crosswords-description:empty::before {
+      content: "[ Inserisci qui il testo di spiegazione ]";
+      opacity: 0.35;
+      font-style: italic;
+    }
+ 
+    /* ── Right panel ── */
+    .crosswords-selector {
+      flex: 0 0 320px;
+      width: 520px;
+    }
+ 
+    .crosswords-selector h2 {
+      margin-top: 0;
+      font-size: 1.1rem;
+    color: var(--heading-color);
+    }
+ 
+    /* ── Responsive: stack on small screens ── */
+    @media (max-width: 720px) {
+      .crosswords-layout {
+        flex-direction: column;
+      }
+      .crosswords-selector {
+        flex: unset;
+        width: 100%;
+      }
 }
