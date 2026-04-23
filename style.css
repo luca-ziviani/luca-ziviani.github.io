@@ -344,6 +344,7 @@ nav.menu {
       font-size: 1.1rem;
     color: var(--heading-color);
     }
+    
  
     /* ── Responsive: stack on small screens ── */
     @media (max-width: 720px) {

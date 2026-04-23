@@ -374,10 +374,6 @@ body.play-page {
   display: none;
 }
 
-.cell:hover:not(.selected):not(.is-block) {
-  background: var(--primary-color);
-  opacity: 0.3;
-}
 
 .cell.selected {
   background: var(--selected);
