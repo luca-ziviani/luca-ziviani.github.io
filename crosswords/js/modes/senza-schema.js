@@ -232,8 +232,8 @@ export function init(spec, ui) {
   // Update sidebar headings to reflect the per-line nature of clues.
   const headingAcross = document.getElementById("heading-across");
   const headingDown   = document.getElementById("heading-down");
-  if (headingAcross) headingAcross.textContent = "Orizzontali (per riga)";
-  if (headingDown)   headingDown.textContent   = "Verticali (per colonna)";
+  if (headingAcross) headingAcross.textContent = "Orizzontali";
+  if (headingDown)   headingDown.textContent   = "Verticali";
 
   // ── State ─────────────────────────────────────────────────────────────────
   const numRows = spec.rows;

@@ -178,8 +178,13 @@ export function init(spec, ui) {
   /** @type {Map<number, string>} */
   let cluesDownByNum   = new Map();
 
+  /** @type {Map<number, HTMLElement>} */
+  const acrossClueEls = new Map();
+  /** @type {Map<number, HTMLElement>} */
+  const downClueEls   = new Map();
+
   /** @type {null|'horizontal'|'vertical'} */
-  let advanceMode = null;
+  let advanceMode = 'horizontal'; // default to horizontal advance after typing
   let activeR = 0;
   let activeC = 0;
 
@@ -228,6 +233,7 @@ export function init(spec, ui) {
       const c = i % numCols;
       cell.classList.toggle("selected", r === activeR && c === activeC);
     });
+    updateActiveClueHighlight();
   }
 
   function setActive(r, c) {
@@ -243,31 +249,27 @@ export function init(spec, ui) {
   }
 
   function stepByDelta(dr, dc) {
-    let r = activeR + dr;
-    let c = activeC + dc;
-    let guard = 0;
-    while (
-      r >= 0 && r < numRows &&
-      c >= 0 && c < numCols &&
-      isBlock(r, c) &&
-      guard++ < numRows * numCols
-    ) { r += dr; c += dc; }
-    if (r >= 0 && r < numRows && c >= 0 && c < numCols && !isBlock(r, c))
+    const r = activeR + dr;
+    const c = activeC + dc;
+    if (r >= 0 && r < numRows && c >= 0 && c < numCols && !isBlock(r, c)) {
       setActive(r, c);
+    }
   }
 
   // ── Advance after typing ──────────────────────────────────────────────────
 
   function advanceHorizontal() {
-    let c = activeC + 1;
-    while (c < numCols && isBlock(activeR, c)) c++;
-    if (c < numCols) setActive(activeR, c);
+    const c = activeC + 1;
+    if (c < numCols && !isBlock(activeR, c)) {
+      setActive(activeR, c);
+    }
   }
 
   function advanceVertical() {
-    let r = activeR + 1;
-    while (r < numRows && isBlock(r, activeC)) r++;
-    if (r < numRows) setActive(r, activeC);
+    const r = activeR + 1;
+    if (r < numRows && !isBlock(r, activeC)) {
+      setActive(r, activeC);
+    }
   }
 
   // ── Solve check ───────────────────────────────────────────────────────────
@@ -308,6 +310,8 @@ export function init(spec, ui) {
   function renderClues() {
     cluesAcrossEl.replaceChildren();
     cluesDownEl.replaceChildren();
+    acrossClueEls.clear();
+    downClueEls.clear();
 
     if (!solutionRows || numberLabelMap.size === 0) {
       const msg = "— Nessun elenco: serve uno schema con numeri in griglia.";
@@ -334,7 +338,7 @@ export function init(spec, ui) {
     const TMPL_A = "Template: definizione orizzontale (sostituisci con il testo corretto).";
     const TMPL_D = "Template: definizione verticale (sostituisci con il testo corretto).";
 
-    function fillList(el, items, clueMap, tmpl) {
+    function fillList(el, items, clueMap, tmpl, clueElMap) {
       if (items.length === 0) {
         const li = document.createElement("li");
         li.className = "clues-empty";
@@ -354,11 +358,54 @@ export function init(spec, ui) {
         li.appendChild(numSpan);
         li.appendChild(textSpan);
         el.appendChild(li);
+        clueElMap.set(num, li);
       }
     }
 
-    fillList(cluesAcrossEl, across, cluesAcrossByNum, TMPL_A);
-    fillList(cluesDownEl,   down,   cluesDownByNum,   TMPL_D);
+    fillList(cluesAcrossEl, across, cluesAcrossByNum, TMPL_A, acrossClueEls);
+    fillList(cluesDownEl,   down,   cluesDownByNum,   TMPL_D, downClueEls);
+  }
+
+  function findActiveClueNum(r, c, direction) {
+    if (direction === "horizontal") {
+      // Go left to find the start of the across word
+      let cc = c;
+      while (cc >= 0 && !isBlock(r, cc)) {
+        if (isAcrossClueStart(r, cc)) {
+          return numberLabelMap.get(keyRC(r, cc)) ?? null;
+        }
+        cc--;
+      }
+    } else if (direction === "vertical") {
+      // Go up to find the start of the down word
+      let rr = r;
+      while (rr >= 0 && !isBlock(rr, c)) {
+        if (isDownClueStart(rr, c)) {
+          return numberLabelMap.get(keyRC(rr, c)) ?? null;
+        }
+        rr--;
+      }
+    }
+    return null;
+  }
+
+  function updateActiveClueHighlight() {
+    // Clear all highlights
+    for (const el of acrossClueEls.values()) el.classList.remove("clue-active");
+    for (const el of downClueEls.values()) el.classList.remove("clue-active");
+
+    const direction = advanceMode || "horizontal"; // default to horizontal
+    const activeNum = findActiveClueNum(activeR, activeC, direction);
+    if (activeNum != null) {
+      const clueElMap = direction === "horizontal" ? acrossClueEls : downClueEls;
+      const li = clueElMap.get(activeNum);
+      if (li) {
+        li.classList.add("clue-active");
+        // Scroll only within the clues panel
+        const panel = cluesAcrossEl.closest('.clues-panel') || cluesDownEl.closest('.clues-panel');
+        li.scrollIntoView({ block: "center", behavior: "smooth", root: panel });
+      }
+    }
   }
 
   // ── Direction buttons ─────────────────────────────────────────────────────
@@ -387,6 +434,12 @@ export function init(spec, ui) {
   });
 
   syncDirectionButtons();
+
+  function setAdvanceMode(mode) {
+    advanceMode = advanceMode === mode ? null : mode;
+    syncDirectionButtons();
+    updateActiveClueHighlight();
+  }
 
   // ── Grid construction ─────────────────────────────────────────────────────
 
@@ -458,8 +511,28 @@ export function init(spec, ui) {
       case "Delete":
         e.preventDefault();
         letterEl.textContent = "";
+        if (advanceMode === "horizontal") {
+          stepByDelta(0, -1);
+        } else if (advanceMode === "vertical") {
+          stepByDelta(-1, 0);
+        }
         updateSolveMessage();
         return;
+    }
+
+    // Keyboard shortcuts for direction mode
+    if (!e.ctrlKey && !e.metaKey && e.altKey) {
+      const key = e.key.toLowerCase();
+      if (key === "o" || key === "h") {
+        e.preventDefault();
+        setAdvanceMode("horizontal");
+        return;
+      }
+      if (key === "v") {
+        e.preventDefault();
+        setAdvanceMode("vertical");
+        return;
+      }
     }
 
     if (e.key.length === 1 && /[a-zA-Z]/.test(e.key)) {
@@ -498,4 +571,5 @@ export function init(spec, ui) {
   updateSelection();
   updateSolveMessage();
   renderClues();
+  updateActiveClueHighlight();
 }
