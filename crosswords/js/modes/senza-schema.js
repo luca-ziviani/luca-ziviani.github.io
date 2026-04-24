@@ -642,8 +642,7 @@ export function init(spec, ui) {
   // Append a small usage hint below the grid, inside the left column.
   // We reuse the existing loadHint element that play.js already cleared.
   loadHint.className = "senza-hint";
-  loadHint.textContent =
-    "Clic sinistro per selezionare una cella · Clic destro (o Spazio) per annerirla o ripristinarla";
+  loadHint.textContent = "Premi '.' per inserire una cella nera (o clic destro)";
 
   // ── Boot ──────────────────────────────────────────────────────────────────
 
