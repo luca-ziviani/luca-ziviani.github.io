@@ -1,0 +1,32 @@
+.grid-wrapper {
+  position: relative;
+  /* Push the grid inward to make room for the labels */
+  padding-top: 24px;   /* height of col labels */
+  padding-left: 400px;  /* width of row labels */
+  display: inline-block;
+}
+
+/* Labels share these base styles */
+.grid-label {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65em;
+  color: #888;
+  pointer-events: none;
+  user-select: none;
+  /* Match your cell size — adjust --cell-size to your value */
+  width: var(--cell-size);
+  height: var(--cell-size);
+}
+
+.col-label {
+  top: 0;
+  left: calc(24px + var(--label-index) * var(--cell-size));
+}
+
+.row-label {
+  left: 0;
+  top: calc(24px + var(--label-index) * var(--cell-size));
+}

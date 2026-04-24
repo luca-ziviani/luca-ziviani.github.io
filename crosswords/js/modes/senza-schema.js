@@ -266,7 +266,7 @@ export function init(spec, ui) {
   const downClueMap   = new Map(spec.cluesDown.map(({ col, text }) => [col, text]));
 
   /** @type {null|'horizontal'|'vertical'} */
-  let advanceMode = null;
+  let advanceMode = 'horizontal';
   let activeR = 0;
   let activeC = 0;
 
@@ -300,6 +300,15 @@ export function init(spec, ui) {
     updateActiveClueHighlight();
   }
 
+
+    function findActiveClueNum(r, c, direction) {
+    if (direction === "horizontal") {
+      return acrossClueMap.has(r) ? r : null;
+    } else if (direction === "vertical") {
+      return downClueMap.has(c) ? c : null;}
+    return null;
+  }
+
   /**
    * Highlight the across clue for the active row and the down clue for the
    * active column, clearing any previously highlighted clues.
@@ -309,43 +318,39 @@ export function init(spec, ui) {
     for (const el of acrossClueEls.values()) el.classList.remove("clue-active");
     for (const el of downClueEls.values())   el.classList.remove("clue-active");
 
+    const direction = advanceMode || "horizontal"; // default to horizontal
+    const activeNum = findActiveClueNum(activeR, activeC, direction);
     // Apply highlight to the current row / column.
-    const acrossLi = acrossClueEls.get(activeR);
-    const downLi   = downClueEls.get(activeC);
-    if (acrossLi) {
-      acrossLi.classList.add("clue-active");
-      acrossLi.scrollIntoView({ block: "nearest", behavior: "smooth" });
-    }
-    if (downLi) {
-      downLi.classList.add("clue-active");
-      downLi.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    if (activeNum != null) {
+      const clueElMap = direction === "horizontal" ? acrossClueEls : downClueEls;
+      const li = clueElMap.get(activeNum);
+      if (li) {
+        li.classList.add("clue-active");
+        // Scroll only within the clues panel
+        const panel = cluesAcrossEl.closest('.clues-panel') || cluesDownEl.closest('.clues-panel');
+        li.scrollIntoView({ block: "center", behavior: "smooth", root: panel });
+      }
     }
   }
 
   function setActive(r, c) {
-    if (isPlayerBlock(r, c)) return;
+    //if (isPlayerBlock(r, c)) return;
     activeR = Math.max(0, Math.min(numRows - 1, r));
     activeC = Math.max(0, Math.min(numCols - 1, c));
     // If that cell ended up black (race condition guard), find first white.
-    if (isPlayerBlock(activeR, activeC)) {
-      const f = findFirstWhite();
-      activeR = f.r;
-      activeC = f.c;
-    }
+    //if (isPlayerBlock(activeR, activeC)) {
+    //  const f = findFirstWhite();
+    //  activeR = f.r;
+    //  activeC = f.c;
+    //}
     updateSelection();
   }
 
   function stepByDelta(dr, dc) {
     let r = activeR + dr;
     let c = activeC + dc;
-    let guard = 0;
-    while (
-      r >= 0 && r < numRows &&
-      c >= 0 && c < numCols &&
-      isPlayerBlock(r, c) &&
-      guard++ < numRows * numCols
-    ) { r += dr; c += dc; }
-    if (r >= 0 && r < numRows && c >= 0 && c < numCols && !isPlayerBlock(r, c))
+    
+    if (r >= 0 && r < numRows && c >= 0 && c < numCols )
       setActive(r, c);
   }
 
@@ -382,17 +387,19 @@ export function init(spec, ui) {
       setActive(r, c);
     } else {
       // Toggle black: clear letter, mark cell, move focus away.
-      cell.querySelector(".letter").textContent = "";
+      cell.querySelector(".letter").textContent = ".";
       playerBlocks.add(key);
       cell.classList.add("player-block");
       cell.setAttribute("aria-disabled", "true");
       // Move selection to the next available white cell.
-      if (activeR === r && activeC === c) {
-        const f = findFirstWhite();
-        activeR = f.r;
-        activeC = f.c;
-        updateSelection();
-      }
+      //if      (advanceMode === "horizontal") advanceHorizontal();
+      //else if (advanceMode === "vertical")   advanceVertical();
+      //if (activeR === r && activeC === c) {
+      //  const f = findFirstWhite();
+      //  activeR = f.r;
+      //  activeC = f.c;
+      //  updateSelection();
+      //}
     }
     updateSolveMessage();
   }
@@ -513,6 +520,13 @@ export function init(spec, ui) {
 
   syncDirectionButtons();
 
+
+  function setAdvanceMode(mode) {
+    advanceMode = advanceMode === mode ? null : mode;
+    syncDirectionButtons();
+    updateActiveClueHighlight();
+  }
+
   // ── Grid construction ─────────────────────────────────────────────────────
 
   function buildGrid() {
@@ -540,12 +554,8 @@ export function init(spec, ui) {
 
         // Left-click: select (or un-toggle if black).
         cell.addEventListener("click", () => {
-          if (isPlayerBlock(r, c)) {
-            toggleBlock(r, c); // un-toggle → select
-          } else {
-            setActive(r, c);
-            gridEl.focus();
-          }
+          setActive(r, c);
+          gridEl.focus();
         });
 
         // Right-click: toggle black/white.
@@ -572,23 +582,50 @@ export function init(spec, ui) {
       case "ArrowRight": e.preventDefault(); stepByDelta( 0,  1); return;
     }
 
-    // Space: toggle the currently active cell black / white.
-    if (e.key === " ") {
-      e.preventDefault();
-      toggleBlock(activeR, activeC);
-      return;
+        // Keyboard shortcuts for direction mode
+    if (!e.ctrlKey && !e.metaKey && e.altKey) {
+      const key = e.key.toLowerCase();
+      if (key === "o" || key === "h") {
+        e.preventDefault();
+        setAdvanceMode("horizontal");
+        return;
+      }
+      if (key === "v") {
+        e.preventDefault();
+        setAdvanceMode("vertical");
+        return;
+      }
     }
 
+
+    // Space: toggle the currently active cell black / white.
+    if (e.key === ".") {
+      e.preventDefault();
+      toggleBlock(activeR, activeC);
+      setActive(activeR, activeC); // ensure focus stays on the toggled cell
+      if      (advanceMode === "horizontal") advanceHorizontal();
+      else if (advanceMode === "vertical")   advanceVertical();
+      updateSolveMessage();
+    }
+
+
     // The remaining keys only act on white (non-player-blocked) cells.
-    if (isPlayerBlock(activeR, activeC)) return;
+    
 
     const letterEl = cellAt(activeR, activeC).querySelector(".letter");
 
     if (e.key === "Backspace" || e.key === "Delete") {
       e.preventDefault();
-      letterEl.textContent = "";
-      updateSolveMessage();
-      return;
+        letterEl.textContent = "";
+        if (isPlayerBlock(activeR, activeC)) toggleBlock(activeR, activeC);
+  
+        if (advanceMode === "horizontal") {
+          stepByDelta(0, -1);
+        } else if (advanceMode === "vertical") {
+          stepByDelta(-1, 0);
+        }
+        updateSolveMessage();
+        return;
     }
 
     if (e.key.length === 1 && /[a-zA-Z]/.test(e.key)) {
