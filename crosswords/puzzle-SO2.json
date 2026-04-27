@@ -1,0 +1,765 @@
+{
+  "type": "classic",
+  "rows": 12,
+  "cols": 22,
+  "blocks": [
+    [ 0, 5 ],
+    [ 0, 15 ],
+    [ 1, 14 ],
+    [ 2, 3 ],
+    [ 2, 9 ],
+    [ 2, 13 ],
+    [ 2, 19 ],
+    [ 3, 2 ],
+    [ 3, 8 ],
+    [ 3, 10 ],
+    [ 3, 12 ],
+    [ 3, 18 ],
+    [ 4, 1 ],
+    [ 4, 7 ],
+    [ 4, 17 ],
+    [ 5, 6 ],
+    [ 5, 16 ],
+    [ 6, 5 ],
+    [ 6, 15 ],
+    [ 7, 4 ],
+    [ 7, 14 ],
+    [ 7, 20 ],
+    [ 8, 3 ],
+    [ 8, 9 ],
+    [ 8, 11 ],
+    [ 8, 13 ],
+    [ 8, 19 ],
+    [ 9, 2 ],
+    [ 9, 8 ],
+    [ 9, 12 ],
+    [ 9, 18 ],
+    [ 10, 7 ],
+    [ 11, 6 ],
+    [ 11, 16 ]
+  ],
+  "solution": [
+    "LAUTA.PRATICARE.GIOBBE",
+    "AUSTRALOPITECO.CARDIAS",
+    "VRN.TRUCE.ESC.CANTI.LT",
+    "IA.FIATO.C.T.PLICO.ELE",
+    "T.MOSTO.DIVISIONI.ROOM",
+    "AGOSTO.MOLESTARE.GALOP",
+    "ERICA.CELENTANO.VITINO",
+    "BIRO.MERCATINO.BEUTE.R",
+    "EGA.BALLE.E.D.SONDA.BA",
+    "LL.SERTO.ANN.PITTI.PAN",
+    "LITUANI.BENEDETTOCROCE",
+    "AERATA.MONETARIO.INDIA"
+  ],
+  "cellNumbers": [
+    {
+      "row": 0,
+      "col": 0,
+      "num": 1
+    },
+    {
+      "row": 0,
+      "col": 1,
+      "num": 2
+    },
+    {
+      "row": 0,
+      "col": 2,
+      "num": 3
+    },
+    {
+      "row": 0,
+      "col": 3,
+      "num": 4
+    },
+    {
+      "row": 0,
+      "col": 4,
+      "num": 5
+    },
+    {
+      "row": 0,
+      "col": 6,
+      "num": 6
+    },
+    {
+      "row": 0,
+      "col": 7,
+      "num": 7
+    },
+    {
+      "row": 0,
+      "col": 8,
+      "num": 8
+    },
+    {
+      "row": 0,
+      "col": 9,
+      "num": 9
+    },
+    {
+      "row": 0,
+      "col": 10,
+      "num": 10
+    },
+    {
+      "row": 0,
+      "col": 11,
+      "num": 11
+    },
+    {
+      "row": 0,
+      "col": 12,
+      "num": 12
+    },
+    {
+      "row": 0,
+      "col": 13,
+      "num": 13
+    },
+    {
+      "row": 0,
+      "col": 16,
+      "num": 14
+    },
+    {
+      "row": 0,
+      "col": 17,
+      "num": 15
+    },
+    {
+      "row": 0,
+      "col": 18,
+      "num": 16
+    },
+    {
+      "row": 0,
+      "col": 19,
+      "num": 17
+    },
+    {
+      "row": 0,
+      "col": 20,
+      "num": 18
+    },
+    {
+      "row": 0,
+      "col": 21,
+      "num": 19
+    },
+    {
+      "row": 1,
+      "col": 0,
+      "num": 20
+    },
+    {
+      "row": 1,
+      "col": 5,
+      "num": 21
+    },
+    {
+      "row": 1,
+      "col": 15,
+      "num": 22
+    },
+    {
+      "row": 2,
+      "col": 0,
+      "num": 23
+    },
+    {
+      "row": 2,
+      "col": 4,
+      "num": 24
+    },
+    {
+      "row": 2,
+      "col": 10,
+      "num": 25
+    },
+    {
+      "row": 2,
+      "col": 14,
+      "num": 26
+    },
+    {
+      "row": 2,
+      "col": 20,
+      "num": 27
+    },
+    {
+      "row": 3,
+      "col": 0,
+      "num": 28
+    },
+    {
+      "row": 3,
+      "col": 3,
+      "num": 29
+    },
+    {
+      "row": 3,
+      "col": 9,
+      "num": 30
+    },
+    {
+      "row": 3,
+      "col": 13,
+      "num": 31
+    },
+    {
+      "row": 3,
+      "col": 19,
+      "num": 32
+    },
+    {
+      "row": 4,
+      "col": 2,
+      "num": 33
+    },
+    {
+      "row": 4,
+      "col": 8,
+      "num": 34
+    },
+    {
+      "row": 4,
+      "col": 10,
+      "num": 35
+    },
+    {
+      "row": 4,
+      "col": 12,
+      "num": 36
+    },
+    {
+      "row": 4,
+      "col": 18,
+      "num": 37
+    },
+    {
+      "row": 5,
+      "col": 0,
+      "num": 38
+    },
+    {
+      "row": 5,
+      "col": 1,
+      "num": 39
+    },
+    {
+      "row": 5,
+      "col": 7,
+      "num": 40
+    },
+    {
+      "row": 5,
+      "col": 17,
+      "num": 41
+    },
+    {
+      "row": 6,
+      "col": 0,
+      "num": 42
+    },
+    {
+      "row": 6,
+      "col": 6,
+      "num": 43
+    },
+    {
+      "row": 6,
+      "col": 16,
+      "num": 44
+    },
+    {
+      "row": 7,
+      "col": 0,
+      "num": 45
+    },
+    {
+      "row": 7,
+      "col": 5,
+      "num": 46
+    },
+    {
+      "row": 7,
+      "col": 15,
+      "num": 47
+    },
+    {
+      "row": 8,
+      "col": 0,
+      "num": 48
+    },
+    {
+      "row": 8,
+      "col": 4,
+      "num": 49
+    },
+    {
+      "row": 8,
+      "col": 14,
+      "num": 50
+    },
+    {
+      "row": 8,
+      "col": 20,
+      "num": 51
+    },
+    {
+      "row": 9,
+      "col": 0,
+      "num": 52
+    },
+    {
+      "row": 9,
+      "col": 3,
+      "num": 53
+    },
+    {
+      "row": 9,
+      "col": 9,
+      "num": 54
+    },
+    {
+      "row": 9,
+      "col": 11,
+      "num": 55
+    },
+    {
+      "row": 9,
+      "col": 13,
+      "num": 56
+    },
+    {
+      "row": 9,
+      "col": 19,
+      "num": 57
+    },
+    {
+      "row": 10,
+      "col": 0,
+      "num": 58
+    },
+    {
+      "row": 10,
+      "col": 2,
+      "num": 59
+    },
+    {
+      "row": 10,
+      "col": 8,
+      "num": 60
+    },
+    {
+      "row": 10,
+      "col": 12,
+      "num": 61
+    },
+    {
+      "row": 10,
+      "col": 18,
+      "num": 62
+    },
+    {
+      "row": 11,
+      "col": 0,
+      "num": 63
+    },
+    {
+      "row": 11,
+      "col": 7,
+      "num": 64
+    },
+    {
+      "row": 11,
+      "col": 17,
+      "num": 65
+    }
+  ],
+  "cluesAcross": [
+    {
+      "num":  1,
+      "text": "Sontuosa, abbondante"
+    },
+    {
+      "num":  5,
+      "text": "Il più grande dei poeti latini"
+    },
+    {
+      "num":  6,
+      "text": "Il dio greco del vino"
+    },
+    {
+      "num":  7,
+      "text": "Il più grande dei pittori italiani"
+    },
+    {
+      "num":  8,
+      "text": "Il più grande dei cantanti italiani"
+    },
+    {
+      "num": 6,
+      "text": "Esercitare.."
+    },
+    {
+      "num": 14,
+      "text": "Il più paziente della Bibbia"
+    },
+    {
+      "num": 20,
+      "text": "Ominide fossile dell'Africa"
+    },
+    {
+      "num": 22,
+      "text": "Tra l'esofago e lo stomaco"
+    },
+    {
+      "num": 23,
+      "text": "Codice dell'aeroporto di Verona"
+    },
+    {
+      "num": 24,
+      "text": "Torvo e minaccioso"
+    },
+    {
+      "num": 25,
+      "text": "In alto a sinistra nella tastiera"
+    },
+    {
+      "num": 26,
+      "text": "I capitoli dei poemi"
+    },
+    {
+      "num": 27,
+      "text": "Sigla di Latina"
+    },
+    {
+      "num": 28,
+      "text": "Il dittongo di biasimo"
+    },
+    {
+      "num": 29,
+      "text": "Manca all'ansante"
+    },
+    {
+      "num": 31,
+      "text": "Busta con documenti"
+    },
+    {
+      "num": 32,
+      "text": "Elena per gli amici"
+    },
+    {
+      "num": 33,
+      "text": "Ribolle in cantina"
+    },
+    {
+      "num": 34,
+      "text": "Le operazioni con il quoziente"
+    },
+    {
+      "num": 37,
+      "text": "Una stanza della house"
+    },
+    {
+      "num": 38,
+      "text": "L'ottavo di dodici"
+    },
+    {
+      "num": 40,
+      "text": "Annoiare, dare fastidio"
+    },
+    {
+      "num": 41,
+      "text": "Il ballo da cui il cancan"
+    },
+    {
+      "num": 42,
+      "text": "Cresce nelle brughiere"
+    },
+    {
+      "num": 43,
+      "text": "Un Adriano cantautore"
+    },
+    {
+      "num": 44,
+      "text": "Sottile come un __ di vespa"
+    },
+    {
+      "num": 45,
+      "text": "La penna con il refill"
+    },
+    {
+      "num": 46,
+      "text": "Un insieme di bancarelle"
+    },
+    {
+      "num": 47,
+      "text": "Recipienti da chimici"
+    },
+    {
+      "num": 48,
+      "text": "Affluente dell'Isarco"
+    },
+    {
+      "num": 49,
+      "text": "Parallelepipedi di paglia"
+    },
+    {
+      "num": 50,
+      "text": "Un pallone meteorologico"
+    },
+    {
+      "num": 51,
+      "text": "Un Affleck del cinema"
+    },
+    {
+      "num": 42,
+      "text": "Loro.."
+    },
+    {
+      "num": 53,
+      "text": "La ghirlanda che premia"
+    },
+    {
+      "num": 54,
+      "text": "Mary __: cantano i Pooh"
+    },
+    {
+      "num": 56,
+      "text": "Bel palazzo di Firenze"
+    },
+    {
+      "num": 57,
+      "text": "Il mitico dio con il flauto"
+    },
+    {
+      "num": 58,
+      "text": "Molti sono nati a Vilnius"
+    },
+    {
+      "num": 60,
+      "text": "Il filosofo di Pescasseroli"
+    },
+    {
+      "num": 63,
+      "text": "Luminosa e ventilata"
+    },
+    {
+      "num": 64,
+      "text": "Il Fondo che segue la stabilità dei cambi"
+    },
+    {
+      "num": 65,
+      "text": "Ha per moneta la rupia."
+    }
+  ],
+  "cluesDown": [
+    {
+      "num":  1,
+      "text": "Il film di Benigni vincitore di tre Oscar"
+    },
+    {
+      "num": 2,
+      "text": "Venticello poetico"
+    },
+    {
+      "num": 3,
+      "text": "La Marina a stelle e strisce"
+    },
+    {
+      "num": 4,
+      "text": "Iniziali del Tasso"
+    },
+    {
+      "num": 5,
+      "text": "Un pittore o uno scultore"
+    },
+    {
+      "num":  6,
+      "text": "Il dio greco della ricchezza"
+    },
+    {
+      "num":  7,
+      "text": "Fa fatica a parlare"
+    },
+    {
+      "num":  8,
+      "text": "Si ciba di nettare"
+    },
+    {
+      "num":  9,
+      "text": "In fondo ai recipienti"
+    },
+    {
+      "num": 10,
+      "text": "Una desinenza per i minerali"
+    },
+    {
+      "num": 11,
+      "text": "Avanzano palleggiando"
+    },
+    {
+      "num": 12,
+      "text": "Segue i casi gen"
+    },
+    {
+      "num": 13,
+      "text": "Nel riso e nel granturco"
+    },
+    {
+      "num": 14,
+      "text": "Penzolano dalle gru"
+    },
+    {
+      "num": 15,
+      "text": "Pieno di aculei"
+    },
+    {
+      "num": 16,
+      "text": "Ne scrisse Orazio"
+    },
+    {
+      "num": 17,
+      "text": "La seconda di ventuno"
+    },
+    {
+      "num": 18,
+      "text": "La nuvoletta dei fumetti"
+    },
+    {
+      "num": 19,
+      "text": "Improvvisata nel parlare"
+    },
+    {
+      "num": 21,
+      "text": "Rivoltato dal vomere"
+    },
+    {
+      "num": 22,
+      "text": "Un Michael attore inglese"
+    },
+    {
+      "num": 26,
+      "text": "Un gas disinfettante"
+    },
+    {
+      "num": 29,
+      "text": "Caliginoso, nebbioso"
+    },
+    {
+      "num": 30,
+      "text": "Il musicista di Palmi"
+    },
+    {
+      "num": 31,
+      "text": "L'ultimo è il più alto"
+    },
+    {
+      "num": 32,
+      "text": "Le isole di Vulcano e Panarea"
+    },
+    {
+      "num": 33,
+      "text": "L'indimenticata Orfei"
+    },
+    {
+      "num": 34,
+      "text": "Lo stilista con Gabbana"
+    },
+    {
+      "num": 35,
+      "text": "È nel fiore della giovinezza"
+    },
+    {
+      "num": 36,
+      "text": "Si allestisce in fiera"
+    },
+    {
+      "num": 37,
+      "text": "Svelta, lesta"
+    },
+    {
+      "num": 39,
+      "text": "Le graticole per il barbecue"
+    },
+    {
+      "num": 40,
+      "text": "Un passeriforme"
+    },
+    {
+      "num": 41,
+      "text": "Pronunciano sentenze"
+    },
+    {
+      "num": 43,
+      "text": "I Galli per i Romani"
+    },
+    {
+      "num": 44,
+      "text": "Lo è il libeccio"
+    },
+    {
+      "num": 46,
+      "text": "Storico fiume francese"
+    },
+    {
+      "num": 47,
+      "text": "L'esplosione del petardo"
+    },
+    {
+      "num": 49,
+      "text": "Una musica Anni '60"
+    },
+    {
+      "num": 50,
+      "text": "Posti.."
+    },
+    {
+      "num": 51,
+      "text": "Se li danno i fidanzati"
+    },
+    {
+      "num": 53,
+      "text": "La Maestà di chi ce l'ha"
+    },
+    {
+      "num": 54,
+      "text": "Agenzia dell'OCSE per l'Energia Nucleare"
+    },
+    {
+      "num": 55,
+      "text": "La rete del tennista"
+    },
+    {
+      "num": 56,
+      "text": "Il segno tra i fattori"
+    },
+    {
+      "num": 57,
+      "text": "i-__: prodotto Apple"
+    },
+    {
+      "num": 59,
+      "text": "In testa al treno"
+    },
+    {
+      "num": 60,
+      "text": "Rendono uno.."
+    },
+    {
+      "num": 61,
+      "text": "Il sì dei moscoviti"
+    },
+    {
+      "num": 62,
+      "text": "Nel mezzo della giornata."
+    }
+  ]
+}
+
+
+

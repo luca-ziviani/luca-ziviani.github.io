@@ -1,5 +1,5 @@
 /**
- * js/modes/senza-schema.js — "Senza schema" crossword mode
+ * js/modes/senza-schema.js - "Senza schema" crossword mode
  *
  * In this mode the grid starts entirely white: the solver does not know in
  * advance where the black cells are.  The challenge is to figure out the
@@ -154,60 +154,16 @@ export function normalize(rawData) {
 // ── Mode-specific styles ──────────────────────────────────────────────────────
 
 /**
- * Inject a <style> block scoped to body.mode-senza-schema.
- * Keeping styles here makes the mode self-contained; no changes to styles.css
- * are required to use this mode.
+ * Inject a <link> to the mode-specific CSS file.
+ * Keeping styles in a separate file makes the mode self-contained.
  */
 function injectStyles() {
   if (document.getElementById("senza-schema-styles")) return; // already injected
-  const style = document.createElement("style");
-  style.id = "senza-schema-styles";
-  style.textContent = `
-    /* ── Senza-schema: cells toggled black by the player ── */
-    body.mode-senza-schema .cell.player-block {
-      background: #1a1a1a;
-      cursor: pointer;        /* still clickable to un-toggle */
-      pointer-events: auto;
-    }
-    body.mode-senza-schema .cell.player-block .letter {
-      visibility: hidden;
-    }
-
-    /* Subtle right-click hint on hover for un-toggled cells */
-    body.mode-senza-schema .cell:not(.player-block):hover::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(37, 99, 235, 0.06);
-      pointer-events: none;
-    }
-
-    /* Active-clue highlight in the sidebar */
-    body.mode-senza-schema .clues-list li.clue-active {
-      background: #eef4ff;
-      border-radius: 4px;
-      outline: 2px solid #93b4f0;
-      outline-offset: -2px;
-    }
-
-    /* Instruction banner below the grid */
-    body.mode-senza-schema .senza-hint {
-      font-size: 0.78rem;
-      color: #666;
-      line-height: 1.45;
-      max-width: 34rem;
-      text-align: center;
-      margin: 0;
-    }
-
-    /* Make clue numbers in this mode show row/col labels, not word numbers */
-    body.mode-senza-schema .clue-num {
-      min-width: 3.2em;
-      color: #444;
-      font-weight: 600;
-    }
-  `;
-  document.head.appendChild(style);
+  const link = document.createElement("link");
+  link.id = "senza-schema-styles";
+  link.rel = "stylesheet";
+  link.href = "css/senza-schema.css";
+  document.head.appendChild(link);
 }
 
 // ── Game initialisation ───────────────────────────────────────────────────────
@@ -223,6 +179,7 @@ export function init(spec, ui) {
     btnOriz, btnVert,
     solveStatus, loadHint,
     cluesAcrossEl, cluesDownEl,
+    playTitle,
   } = ui;
 
   // ── Mode setup ────────────────────────────────────────────────────────────
@@ -243,7 +200,7 @@ export function init(spec, ui) {
   const solutionBlocks = spec.solutionBlocks; // Set<"r,c">
 
   /**
-   * Black cells toggled by the player.  Initially empty — the player starts
+   * Black cells toggled by the player.  Initially empty - the player starts
    * with a fully white grid and must discover where the blacks go.
    * @type {Set<string>}
    */
@@ -277,17 +234,8 @@ export function init(spec, ui) {
   /** True if the player has marked this cell black. */
   function isPlayerBlock(r, c) { return playerBlocks.has(keyRC(r, c)); }
 
-  /** True if this cell is black in the solution. */
-  function isSolutionBlock(r, c) { return solutionBlocks.has(keyRC(r, c)); }
-
   function cellAt(r, c) { return cells[r * numCols + c]; }
 
-  function findFirstWhite() {
-    for (let r = 0; r < numRows; r++)
-      for (let c = 0; c < numCols; c++)
-        if (!isPlayerBlock(r, c)) return { r, c };
-    return { r: 0, c: 0 };
-  }
 
   // ── Selection ─────────────────────────────────────────────────────────────
 
@@ -337,12 +285,6 @@ export function init(spec, ui) {
     //if (isPlayerBlock(r, c)) return;
     activeR = Math.max(0, Math.min(numRows - 1, r));
     activeC = Math.max(0, Math.min(numCols - 1, c));
-    // If that cell ended up black (race condition guard), find first white.
-    //if (isPlayerBlock(activeR, activeC)) {
-    //  const f = findFirstWhite();
-    //  activeR = f.r;
-    //  activeC = f.c;
-    //}
     updateSelection();
   }
 
@@ -387,19 +329,11 @@ export function init(spec, ui) {
       setActive(r, c);
     } else {
       // Toggle black: clear letter, mark cell, move focus away.
-      cell.querySelector(".letter").textContent = ".";
+      cell.querySelector(".letter").textContent = " ";
       playerBlocks.add(key);
       cell.classList.add("player-block");
       cell.setAttribute("aria-disabled", "true");
-      // Move selection to the next available white cell.
-      //if      (advanceMode === "horizontal") advanceHorizontal();
-      //else if (advanceMode === "vertical")   advanceVertical();
-      //if (activeR === r && activeC === c) {
-      //  const f = findFirstWhite();
-      //  activeR = f.r;
-      //  activeC = f.c;
-      //  updateSelection();
-      //}
+      
     }
     updateSolveMessage();
   }
@@ -438,12 +372,37 @@ export function init(spec, ui) {
 
   function updateSolveMessage() {
     if (checkSolved()) {
-      solveStatus.textContent =
-        "Ottimo! Hai risolto lo schema: celle nere e lettere sono tutti corretti.";
+      solveStatus.textContent = "";
       solveStatus.classList.add("is-solved");
+      
+      // Add COMPLETATO to the title
+      if (playTitle && !playTitle.textContent.includes("COMPLETATO")) {
+        playTitle.textContent = playTitle.textContent + " - COMPLETATO";
+      }
+      
+      // Turn all white cells green
+      for (let r = 0; r < numRows; r++) {
+        for (let c = 0; c < numCols; c++) {
+          const key = keyRC(r, c);
+          if (!playerBlocks.has(key)) {
+            const cell = cellAt(r, c);
+            cell.classList.add("solved-cell");
+          }
+        }
+      }
     } else {
       solveStatus.textContent = "";
       solveStatus.classList.remove("is-solved");
+      
+      // Remove COMPLETATO from the title
+      if (playTitle) {
+        playTitle.textContent = playTitle.textContent.replace(" - COMPLETATO", "");
+      }
+      
+      // Revert cells to original colors
+      for (const cell of cells) {
+        cell.classList.remove("solved-cell");
+      }
     }
   }
 
@@ -459,7 +418,7 @@ export function init(spec, ui) {
       if (clues.length === 0) {
         const li = document.createElement("li");
         li.className = "clues-empty";
-        li.textContent = "— Nessuna definizione per questa direzione.";
+        li.textContent = "- Nessuna definizione per questa direzione.";
         listEl.appendChild(li);
         return;
       }
@@ -546,7 +505,7 @@ export function init(spec, ui) {
         cell.setAttribute("aria-rowindex", String(r + 1));
         cell.setAttribute("aria-colindex", String(c + 1));
 
-        // Every cell starts white — no solution blacks are pre-revealed.
+        // Every cell starts white - no solution blacks are pre-revealed.
         const letter = document.createElement("span");
         letter.className = "letter";
         letter.setAttribute("aria-hidden", "true");
@@ -655,4 +614,7 @@ export function init(spec, ui) {
   updateSelection();
   updateSolveMessage();
   renderClues();
+
+  // Auto-focus the grid so the user can immediately start typing
+  focusGrid();
 }

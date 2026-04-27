@@ -1,5 +1,5 @@
 /**
- * js/modes/classic.js — Classic crossword mode
+ * js/modes/classic.js - Classic crossword mode
  *
  * Exported API (consumed by play.js):
  *   normalize(rawData)  → throws on invalid JSON; returns a clean spec object
@@ -21,6 +21,14 @@
  */
 export function normalize(rawData) {
   const data = Object.assign({}, rawData);
+  const errors = [];
+
+  // Funzione helper per loggare e accumulare errori
+  const reportError = (msg, context = "") => {
+    const fullMsg = context ? `[${context}] ${msg}` : msg;
+    errors.push(fullMsg);
+    console.error("❌ Errore JSON:", fullMsg);
+  };
 
   // ── Grid dimensions ──────────────────────────────────────────────────────
   let rows, cols;
@@ -34,116 +42,111 @@ export function normalize(rawData) {
     rows = data.rows;
     cols = data.cols;
     if (rows < 1 || cols < 1 || rows > 50 || cols > 50)
-      throw new Error("rows e cols devono essere tra 1 e 50");
+      reportError(`Dimensioni fuori limite: ${rows}x${cols} (max 50x50)`, "Grid");
   } else if (data.size != null && Number.isInteger(data.size)) {
     rows = cols = data.size;
     if (rows < 1 || rows > 50)
-      throw new Error("Campo size non valido (usa 1–50 oppure rows/cols)");
+      reportError(`Size non valido: ${rows} (deve essere 1-50)`, "Grid");
   } else {
-    throw new Error(
-      'Indica "size" (griglia quadrata) oppure "rows" e "cols" (rettangolare)'
-    );
+    reportError('Mancano "size" o "rows"/"cols"', "Grid");
+    // Se mancano le dimensioni, non possiamo procedere oltre con senso
+    throw new Error("Impossibile validare il resto: dimensioni mancanti.");
   }
   data.rows = rows;
   data.cols = cols;
 
   // ── Blocks ───────────────────────────────────────────────────────────────
-  if (!Array.isArray(data.blocks))
-    throw new Error("blocks deve essere un array");
-
-  for (let i = 0; i < data.blocks.length; i++) {
-    const pair = data.blocks[i];
-    if (
-      !Array.isArray(pair) ||
-      pair.length !== 2 ||
-      !Number.isInteger(pair[0]) ||
-      !Number.isInteger(pair[1])
-    )
-      throw new Error("blocks: ogni elemento deve essere [r, c] con interi");
-    const [br, bc] = pair;
-    if (br < 0 || br >= rows || bc < 0 || bc >= cols)
-      throw new Error("blocks: coordinate fuori dalla griglia rows×cols");
+  if (!Array.isArray(data.blocks)) {
+    reportError("blocks deve essere un array", "Blocks");
+  } else {
+    data.blocks.forEach((pair, i) => {
+      if (!Array.isArray(pair) || pair.length !== 2 || !Number.isInteger(pair[0]) || !Number.isInteger(pair[1])) {
+        reportError(`Elemento indice ${i} non è un array [r, c] valido: ${JSON.stringify(pair)}`, "Blocks");
+      } else {
+        const [br, bc] = pair;
+        if (br < 0 || br >= rows || bc < 0 || bc >= cols)
+          reportError(`Coordinate fuori griglia: [${br}, ${bc}]`, "Blocks");
+      }
+    });
   }
 
   // ── Solution ─────────────────────────────────────────────────────────────
-  if (!Array.isArray(data.solution))
-    throw new Error("solution deve essere un array");
-  if (data.solution.length !== rows)
-    throw new Error('solution deve avere esattamente "rows" righe');
-  for (let i = 0; i < rows; i++) {
-    if (
-      typeof data.solution[i] !== "string" ||
-      data.solution[i].length !== cols
-    )
-      throw new Error(
-        'Ogni riga di solution deve avere lunghezza uguale a "cols"'
-      );
+  if (!Array.isArray(data.solution)) {
+    reportError("solution deve essere un array", "Solution");
+  } else {
+    if (data.solution.length !== rows)
+      reportError(`Numero righe errato: attese ${rows}, trovate ${data.solution.length}`, "Solution");
+    
+    data.solution.forEach((line, i) => {
+      if (typeof line !== "string") {
+        reportError(`Riga ${i} non è una stringa`, "Solution");
+      } else if (line.length !== cols) {
+        reportError(`Riga ${i} lunghezza errata: attese ${cols}, trovate ${line.length}`, "Solution");
+      }
+    });
   }
 
   // ── Cell numbers ─────────────────────────────────────────────────────────
-  const blockSet = new Set(data.blocks.map(([r, c]) => r + "," + c));
+  const blockSet = new Set((data.blocks || []).map(([r, c]) => r + "," + c));
   const rawLabels = Array.isArray(data.cellNumbers) ? data.cellNumbers : [];
   const seenCells = new Set();
 
-  for (const it of rawLabels) {
-    if (
-      !it ||
-      !Number.isInteger(it.row) ||
-      !Number.isInteger(it.col) ||
-      !Number.isInteger(it.num)
-    )
-      throw new Error(
-        "cellNumbers: ogni elemento deve avere row, col e num interi"
-      );
+  rawLabels.forEach((it, i) => {
+    if (!it || !Number.isInteger(it.row) || !Number.isInteger(it.col) || !Number.isInteger(it.num)) {
+      reportError(`Elemento ${i} malformato`, "CellNumbers");
+      return;
+    }
     if (it.row < 0 || it.row >= rows || it.col < 0 || it.col >= cols)
-      throw new Error("cellNumbers: row/col fuori dalla griglia");
-    if (it.num < 1)
-      throw new Error("cellNumbers: num deve essere ≥ 1");
+      reportError(`Cella fuori griglia: r${it.row}, c${it.col}`, "CellNumbers");
+    if (it.num < 1) reportError(`Numero non valido: ${it.num}`, "CellNumbers");
+    
     const pk = it.row + "," + it.col;
-    if (blockSet.has(pk))
-      throw new Error(
-        "cellNumbers: non può esserci un numero su una casella nera"
-      );
-    if (seenCells.has(pk))
-      throw new Error("cellNumbers: stessa cella indicata due volte");
+    if (blockSet.has(pk)) reportError(`Numero su casella nera: [${it.row}, ${it.col}]`, "CellNumbers");
+    if (seenCells.has(pk)) reportError(`Cella duplicata: [${it.row}, ${it.col}]`, "CellNumbers");
     seenCells.add(pk);
-  }
+  });
   data.cellNumbers = rawLabels;
 
   // ── Clue lists ────────────────────────────────────────────────────────────
   function normalizeClueList(raw, label) {
     if (raw == null) return [];
-    if (!Array.isArray(raw))
-      throw new Error(label + ": deve essere un array oppure omettilo");
+    if (!Array.isArray(raw)) {
+      reportError("Deve essere un array", label);
+      return [];
+    }
 
     const out = [];
     const seenNums = new Set();
-    for (let i = 0; i < raw.length; i++) {
-      const it = raw[i];
-      if (!it || typeof it !== "object")
-        throw new Error(label + ": elemento " + i + " non valido");
+    raw.forEach((it, i) => {
+      const context = `${label}[${i}]`;
+      if (!it || typeof it !== "object") {
+        reportError("Oggetto non valido", context);
+        return;
+      }
       if (!Number.isInteger(it.num) || it.num < 1)
-        throw new Error(
-          label + ": num intero ≥ 1 richiesto (voce " + i + ")"
-        );
-      if (typeof it.text !== "string")
-        throw new Error(
-          label + ": campo text stringa richiesto per num " + it.num
-        );
-      const t = it.text.trim();
-      if (!t)
-        throw new Error(label + ": testo vuoto per il numero " + it.num);
+        reportError(`num non valido: ${it.num}`, context);
+      
+      if (typeof it.text !== "string" || !it.text.trim())
+        reportError(`Testo mancante o vuoto per num ${it.num}`, context);
+      
       if (seenNums.has(it.num))
-        throw new Error(label + ": il numero " + it.num + " è duplicato");
+        reportError(`Numero duplicato: ${it.num}`, context);
+      
       seenNums.add(it.num);
-      out.push({ num: it.num, text: t });
-    }
-    out.sort((a, b) => a.num - b.num);
-    return out;
+      out.push({ num: it.num, text: (it.text || "").trim() });
+    });
+    return out.sort((a, b) => a.num - b.num);
   }
 
-  data.cluesAcross = normalizeClueList(data.cluesAcross, "cluesAcross");
-  data.cluesDown   = normalizeClueList(data.cluesDown,   "cluesDown");
+  data.cluesAcross = normalizeClueList(data.cluesAcross, "CluesAcross");
+  data.cluesDown = normalizeClueList(data.cluesDown, "CluesDown");
+
+  // ── Final Check ──────────────────────────────────────────────────────────
+  if (errors.length > 0) {
+    console.warn(`⚠️ Trovati ${errors.length} errori nel file JSON.`);
+    // Se vuoi comunque bloccare l'esecuzione:
+    throw new Error("Validazione fallita. Controlla i log in console.");
+  }
 
   return data;
 }
@@ -161,6 +164,7 @@ export function init(spec, ui) {
     btnOriz, btnVert,
     solveStatus,
     cluesAcrossEl, cluesDownEl,
+    playTitle,
   } = ui;
 
   // ── State ─────────────────────────────────────────────────────────────────
@@ -296,12 +300,37 @@ export function init(spec, ui) {
       return;
     }
     if (checkSolved()) {
-      solveStatus.textContent =
-        "Ottimo! Hai risolto il cruciverba: tutte le lettere sono corrette.";
+      solveStatus.textContent = "";
       solveStatus.classList.add("is-solved");
+      
+      // Add COMPLETATO to the title
+      if (playTitle && !playTitle.textContent.includes("COMPLETATO")) {
+        playTitle.textContent = playTitle.textContent + " - COMPLETATO";
+      }
+      
+      // Turn all white cells green
+      for (let r = 0; r < numRows; r++) {
+        for (let c = 0; c < numCols; c++) {
+          const key = keyRC(r, c);
+          if (!blockSet.has(key)) {
+            const cell = cellAt(r, c);
+            cell.classList.add("solved-cell");
+          }
+        }
+      }
     } else {
       solveStatus.textContent = "";
       solveStatus.classList.remove("is-solved");
+      
+      // Remove COMPLETATO from the title
+      if (playTitle) {
+        playTitle.textContent = playTitle.textContent.replace(" - COMPLETATO", "");
+      }
+      
+      // Revert cells to original colors
+      for (const cell of cells) {
+        cell.classList.remove("solved-cell");
+      }
     }
   }
 
@@ -314,7 +343,7 @@ export function init(spec, ui) {
     downClueEls.clear();
 
     if (!solutionRows || numberLabelMap.size === 0) {
-      const msg = "— Nessun elenco: serve uno schema con numeri in griglia.";
+      const msg = "- Nessun elenco: serve uno schema con numeri in griglia.";
       for (const el of [cluesAcrossEl, cluesDownEl]) {
         const li = document.createElement("li");
         li.className = "clues-empty";
@@ -342,7 +371,7 @@ export function init(spec, ui) {
       if (items.length === 0) {
         const li = document.createElement("li");
         li.className = "clues-empty";
-        li.textContent = "— Nessuna parola in questa direzione.";
+        li.textContent = "- Nessuna parola in questa direzione.";
         el.appendChild(li);
         return;
       }
@@ -572,4 +601,7 @@ export function init(spec, ui) {
   updateSolveMessage();
   renderClues();
   updateActiveClueHighlight();
+
+  // Auto-focus the grid so the user can immediately start typing
+  requestAnimationFrame(() => gridEl.focus({ preventScroll: true }));
 }

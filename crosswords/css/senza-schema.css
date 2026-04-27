@@ -1,32 +1,52 @@
-.grid-wrapper {
-  position: relative;
-  /* Push the grid inward to make room for the labels */
-  padding-top: 24px;   /* height of col labels */
-  padding-left: 400px;  /* width of row labels */
-  display: inline-block;
+/* Senza-schema mode: cells toggled black by the player */
+body.mode-senza-schema .cell.player-block {
+  background: #1a1a1a;
+  cursor: pointer;        /* still clickable to un-toggle */
+  pointer-events: auto;
+}
+body.mode-senza-schema .cell.player-block .letter {
+  visibility: hidden;
 }
 
-/* Labels share these base styles */
-.grid-label {
+/* Subtle right-click hint on hover for un-toggled cells */
+body.mode-senza-schema .cell:not(.player-block):hover::after {
+  content: "";
   position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.65em;
-  color: #888;
+  inset: 0;
+  background: rgba(37, 99, 235, 0.06);
   pointer-events: none;
-  user-select: none;
-  /* Match your cell size — adjust --cell-size to your value */
-  width: var(--cell-size);
-  height: var(--cell-size);
 }
 
-.col-label {
-  top: 0;
-  left: calc(24px + var(--label-index) * var(--cell-size));
+/* Active-clue highlight in the sidebar */
+body.mode-senza-schema .clues-list li.clue-active {
+  background: #eef4ff;
+  border-radius: 4px;
+  outline: 2px solid #93b4f0;
+  outline-offset: -2px;
 }
 
-.row-label {
-  left: 0;
-  top: calc(24px + var(--label-index) * var(--cell-size));
+/* Instruction banner below the grid */
+body.mode-senza-schema .senza-hint {
+  font-size: 0.78rem;
+  color: #666;
+  line-height: 1.45;
+  max-width: 34rem;
+  text-align: center;
+  margin: 0;
 }
+
+/* Make clue numbers in this mode show row/col labels, not word numbers */
+body.mode-senza-schema .clue-num {
+  min-width: 3.2em;
+  color: #444;
+  font-weight: 600;
+}
+
+/* Solved state: green cells */
+body.mode-senza-schema .cell.solved-cell {
+  background: #d4edda;
+}
+body.mode-senza-schema .cell.solved-cell .letter {
+  color: #155724;
+}
+
