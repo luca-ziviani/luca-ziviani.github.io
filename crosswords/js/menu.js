@@ -19,7 +19,7 @@
         a.appendChild(h2);
         if (p.description) {
           const desc = document.createElement("p");
-          desc.textContent = p.description;
+          desc.innerHTML = p.description.replace(/\n/g, "<br>");
           a.appendChild(desc);
         }
         li.appendChild(a);

@@ -1,0 +1,428 @@
+{
+  "type": "classic",
+  "rows": 10,
+  "cols": 12,
+  "blocks": [
+    [1, 2],
+    [2, 3],
+    [2, 10],
+    [3, 4],
+    [3, 9],
+    [4, 5],
+    [4, 8],
+    [5, 3],
+    [5, 6],
+    [6, 2],
+    [6, 7],
+    [7, 1],
+    [7, 8],
+    [8, 9]
+  ],
+  "solution": [
+    "MILITEIGNOTO",
+    "AN.VANCOUVER",
+    "DAS.STORMO.T",
+    "ALAN.INDI.CO",
+    "GALLO.EI.TAG",
+    "ARE.RT.OMERO",
+    "SE.CLAP.CLAN",
+    "C.BLABLA.OCA",
+    "ASTEROIDI.AL",
+    "RASSERENARSI"
+  ],
+  "cellNumbers": [
+    {
+    "row": 0,
+    "col": 0,
+    "num": 1
+    },
+    {
+    "row": 0,
+    "col": 1,
+    "num": 2
+    },
+    {
+    "row": 0,
+    "col": 3,
+    "num": 3
+    },
+    {
+    "row": 0,
+    "col": 4,
+    "num": 4
+    },
+    {
+    "row": 0,
+    "col": 5,
+    "num": 5
+    },
+    {
+    "row": 0,
+    "col": 6,
+    "num": 6
+    },
+    {
+    "row": 0,
+    "col": 7,
+    "num": 7
+    },
+    {
+    "row": 0,
+    "col": 8,
+    "num": 8
+    },
+    {
+    "row": 0,
+    "col": 9,
+    "num": 9
+    },
+    {
+    "row": 0,
+    "col": 10,
+    "num": 10
+    },
+    {
+    "row": 0,
+    "col": 11,
+    "num": 11
+    },
+    {
+    "row": 1,
+    "col": 0,
+    "num": 12
+    },
+    {
+    "row": 1,
+    "col": 3,
+    "num": 13
+    },
+    {
+    "row": 2,
+    "col": 0,
+    "num": 14
+    },
+    {
+    "row": 2,
+    "col": 2,
+    "num": 15
+    },
+    {
+    "row": 2,
+    "col": 4,
+    "num": 16
+    },
+    {
+    "row": 3,
+    "col": 0,
+    "num": 17
+    },
+    {
+    "row": 3,
+    "col": 3,
+    "num": 18
+    },
+    {
+    "row": 3,
+    "col": 5,
+    "num": 19
+    },
+    {
+    "row": 3,
+    "col": 10,
+    "num": 20
+    },
+    {
+    "row": 4,
+    "col": 0,
+    "num": 21
+    },
+    {
+    "row": 4,
+    "col": 4,
+    "num": 22
+    },
+    {
+    "row": 4,
+    "col": 6,
+    "num": 23
+    },
+    {
+    "row": 4,
+    "col": 9,
+    "num": 24
+    },
+    {
+    "row": 5,
+    "col": 0,
+    "num": 25
+    },
+    {
+    "row": 5,
+    "col": 4,
+    "num": 26
+    },
+    {
+    "row": 5,
+    "col": 5,
+    "num": 27
+    },
+    {
+    "row": 5,
+    "col": 7,
+    "num": 28
+    },
+    {
+    "row": 5,
+    "col": 8,
+    "num": 29
+    },
+    {
+    "row": 6,
+    "col": 0,
+    "num": 30
+    },
+    {
+    "row": 6,
+    "col": 3,
+    "num": 31
+    },
+    {
+    "row": 6,
+    "col": 6,
+    "num": 32
+    },
+    {
+    "row": 6,
+    "col": 8,
+    "num": 33
+    },
+    {
+    "row": 7,
+    "col": 2,
+    "num": 34
+    },
+    {
+    "row": 7,
+    "col": 7,
+    "num": 35
+    },
+    {
+    "row": 7,
+    "col": 9,
+    "num": 36
+    },
+    {
+    "row": 8,
+    "col": 0,
+    "num": 37
+    },
+    {
+    "row": 8,
+    "col": 1,
+    "num": 38
+    },
+    {
+    "row": 8,
+    "col": 8,
+    "num": 39
+    },
+    {
+    "row": 8,
+    "col": 10,
+    "num": 40
+    },
+    {
+    "row": 9,
+    "col": 0,
+    "num": 41
+    }
+  ],
+  "cluesAcross": [
+    {
+ "num": 1,
+ "text": "Riposa sull'Altare della Patria."
+},
+{
+ "num": 12,
+ "text": " In mano."
+},
+{
+ "num": 13,
+ "text": "Una città sul Pacifico in Canada."
+},
+{
+ "num": 14,
+ "text": "Pasta sintetica simile alla creta."
+},
+{
+ "num": 16,
+ "text": "Un gruppo di uccelli."
+},
+{
+ "num": 17,
+ "text": "Il matematico Turing."
+},
+{
+ "num": 19,
+ "text": "Un poi ricercato"
+},
+{
+ "num": 20,
+ "text": "Il cobalto nelle formule."
+},
+{
+ "num": 21,
+ "text": "Non tollera rivali nel pollaio."
+},
+{
+ "num": 23,
+ "text": "L'incipit de Il cinque maggio."
+},
+{
+ "num": 24,
+ "text": "Firma dei graffitari."
+},
+{
+ "num": 25,
+ "text": "Altari non cristiani."
+},
+{
+ "num": 26,
+ "text": "Le separa la S."
+},
+{
+ "num": 28,
+ "text": "Cantò le gesta di Ulisse."
+},
+{
+ "num": 30,
+ "text": "Si dice condizionando."
+},
+{
+ "num": 31,
+ "text": "Un applauso nei fumetti."
+},
+{
+ "num": 33,
+ "text": "Una setta di amici."
+},
+{
+ "num": 34,
+ "text": "Un futile chiacchiericcio."
+},
+{
+ "num": 36,
+ "text": "Dà un ottimo piumino."
+},
+{
+ "num": 37,
+ "text": "Piccoli pianeti."
+},
+{
+ "num": 40,
+ "text": "Il Pacino tra i divi."
+},
+{
+ "num": 41,
+ "text": "Ritrovare la tranquillità."
+}
+  ],
+  "cluesDown": [
+    {
+ "num": 1,
+ "text": "L'isola africana dei lemuri."
+},
+{
+ "num": 2,
+ "text": "Assumere per aspirazione."
+},
+{
+ "num": 3,
+ "text": "Un Enrico di Shakespeare."
+},
+{
+ "num": 4,
+ "text": "Un tribunale sportivo (sigla)."
+},
+{
+ "num": 5,
+ "text": "Alcuni sono parastatali."
+},
+{
+ "num": 6,
+ "text": "Si cliccano sul desktop."
+},
+{
+ "num": 7,
+ "text": "Alessandro Magno tagliò il suo celebre nodo."
+},
+{
+ "num": 8,
+ "text": "Gli dei pagani."
+},
+{
+ "num": 9,
+ "text": "Dà il nome ad un castello napoletano."
+},
+{
+ "num": 10,
+ "text": "Tesi lasciata a metà."
+},
+{
+ "num": 11,
+ "text": "Lo sono gli assi cartesiani."
+},
+{
+ "num": 15,
+ "text": "Il sapore di Gino Paoli."
+},
+{
+ "num": 18,
+ "text": "La sigla dell'Olanda."
+},
+{
+ "num": 20,
+ "text": "Vi nacque Simón Bolívar."
+},
+{
+ "num": 22,
+ "text": "Ricamare all'intorno."
+},
+{
+ "num": 24,
+ "text": "Lo si stende per il picnic."
+},
+{
+ "num": 27,
+ "text": "Un monte evangelico."
+},
+{
+ "num": 29,
+ "text": "Precede Cartney."
+},
+{
+ "num": 31,
+ "text": "Centro della Val di Non."
+},
+{
+ "num": 32,
+ "text": "Un piegamento della danzatrice."
+},
+{
+ "num": 34,
+ "text": "Gruppo musicale sudcoreano."
+},
+{
+ "num": 35,
+ "text": "La sigla dell'acido desossiribonucleico."
+},
+{
+ "num": 38,
+ "text": "L'Arabia Saudita sul web."
+},
+{
+ "num": 39,
+ "text": "Il dittongo in italiano."
+}
+  ]
+}

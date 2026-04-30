@@ -1,0 +1,414 @@
+{
+  "type": "classic",
+  "rows": 10,
+  "cols": 12,
+  "blocks": [
+    [0, 5],
+    [1, 4],
+    [2, 8],
+    [3, 2],
+    [3, 7],
+    [4, 1],
+    [4, 5],
+    [4, 11],
+    [5, 0],
+    [5, 6],
+    [5, 10],
+    [6, 4],
+    [6, 9],
+    [7, 3],
+    [8, 7],
+    [9, 6]
+  ],
+  "solution": [
+    "OSCAR.CANCAN",
+    "PAIR.COGNOME",
+    "ANTIGELO.MAR",
+    "LO.AREM.RATA",
+    "E.INO.AKIRA.",
+    ".MANGA.ENI.P",
+    "POCA.GONG.MA",
+    "EGO.PANTHEON",
+    "COPIATE.IRON",
+    "ELOISA.SOGNI"
+  ],
+  "cellNumbers": [
+    {
+ "row": 0,
+ "col": 0,
+ "num": 1
+},
+{
+ "row": 0,
+ "col": 1,
+ "num": 2
+},
+{
+ "row": 0,
+ "col": 2,
+ "num": 3
+},
+{
+ "row": 0,
+ "col": 3,
+ "num": 4
+},
+{
+ "row": 0,
+ "col": 6,
+ "num": 5
+},
+{
+ "row": 0,
+ "col": 7,
+ "num": 6
+},
+{
+ "row": 0,
+ "col": 8,
+ "num": 7
+},
+{
+ "row": 0,
+ "col": 9,
+ "num": 8
+},
+{
+ "row": 0,
+ "col": 10,
+ "num": 9
+},
+{
+ "row": 0,
+ "col": 11,
+ "num": 10
+},
+{
+ "row": 1,
+ "col": 0,
+ "num": 11
+},
+{
+ "row": 1,
+ "col": 5,
+ "num": 12
+},
+{
+ "row": 2,
+ "col": 0,
+ "num": 13
+},
+{
+ "row": 2,
+ "col": 4,
+ "num": 14
+},
+{
+ "row": 2,
+ "col": 9,
+ "num": 15
+},
+{
+ "row": 3,
+ "col": 0,
+ "num": 16
+},
+{
+ "row": 3,
+ "col": 3,
+ "num": 17
+},
+{
+ "row": 3,
+ "col": 8,
+ "num": 18
+},
+{
+ "row": 4,
+ "col": 2,
+ "num": 19
+},
+{
+ "row": 4,
+ "col": 6,
+ "num": 20
+},
+{
+ "row": 4,
+ "col": 7,
+ "num": 21
+},
+{
+ "row": 5,
+ "col": 1,
+ "num": 22
+},
+{
+ "row": 5,
+ "col": 5,
+ "num": 23
+},
+{
+ "row": 5,
+ "col": 7,
+ "num": 24
+},
+{
+ "row": 5,
+ "col": 11,
+ "num": 25
+},
+{
+ "row": 6,
+ "col": 0,
+ "num": 26
+},
+{
+ "row": 6,
+ "col": 5,
+ "num": 27
+},
+{
+ "row": 6,
+ "col": 6,
+ "num": 28
+},
+{
+ "row": 6,
+ "col": 10,
+ "num": 29
+},
+{
+ "row": 7,
+ "col": 0,
+ "num": 30
+},
+{
+ "row": 7,
+ "col": 4,
+ "num": 31
+},
+{
+ "row": 7,
+ "col": 9,
+ "num": 32
+},
+{
+ "row": 8,
+ "col": 0,
+ "num": 33
+},
+{
+ "row": 8,
+ "col": 3,
+ "num": 34
+},
+{
+ "row": 8,
+ "col": 8,
+ "num": 35
+},
+{
+ "row": 9,
+ "col": 0,
+ "num": 36
+},
+{
+ "row": 9,
+ "col": 7,
+ "num": 37
+}
+  ],
+  "cluesAcross": [
+    {
+ "num": 1,
+ "text": "Una statuetta per divi."
+},
+{
+ "num": 5,
+ "text": "Ballo d'altri tempi."
+},
+{
+ "num": 11,
+ "text": "Una puntata alla roulette."
+},
+{
+ "num": 12,
+ "text": "Passa i padre in figlio."
+},
+{
+ "num": 13,
+ "text": "Circola nel radiatore dell'auto."
+},
+{
+ "num": 15,
+ "text": "Il terzo mese sul datario."
+},
+{
+ "num": 16,
+ "text": "In fondo al molo."
+},
+{
+ "num": 17,
+ "text": "Il palazzo delle odalische."
+},
+{
+ "num": 18,
+ "text": "Frazione di pagamento."
+},
+{
+ "num": 19,
+ "text": "Tutt'altro che one."
+},
+{
+ "num": 20,
+ "text": "Il Kurosawa famoso regista."
+},
+{
+ "num": 22,
+ "text": "Un fumetto giapponese."
+},
+{
+ "num": 24,
+ "text": "Una sua azienda era l'Agip."
+},
+{
+ "num": 26,
+ "text": "Scarsa, insufficiente."
+},
+{
+ "num": 27,
+ "text": "Mette fine al round."
+},
+{
+ "num": 29,
+ "text": "Introduce un'obiezione."
+},
+{
+ "num": 30,
+ "text": "L'io virgiliano."
+},
+{
+ "num": 31,
+ "text": "Celebre edificio romano."
+},
+{
+ "num": 33,
+ "text": "Imitate o riscritte in belle."
+},
+{
+ "num": 35,
+ "text": "Un ferro a golf."
+},
+{
+ "num": 36,
+ "text": "La amò Abelardo."
+},
+{
+ "num": 37,
+ "text": "Si vedono a occhi chiusi."
+}
+  ],
+  "cluesDown": [
+    {
+ "num": 1,
+ "text": "Una gemma lattiginosa."
+},
+{
+ "num": 2,
+ "text": "Tutt'altro che malato."
+},
+{
+ "num": 3,
+ "text": "Citazione, detto in breve."
+},
+{
+ "num": 4,
+ "text": "La ricorda un filo."
+},
+{
+ "num": 5,
+ "text": "Piena zeppa."
+},
+{
+ "num": 6,
+ "text": "Foglia di conifere."
+},
+{
+ "num": 7,
+ "text": "È non nelle chat."
+},
+{
+ "num": 8,
+ "text": "Sono allegre quelle di Windsor."
+},
+{
+ "num": 9,
+ "text": "Lo è la ragazza del cuore."
+},
+{
+ "num": 10,
+ "text": "La magia della strega."
+},
+{
+ "num": 12,
+ "text": "Antenata della Ue."
+},
+{
+ "num": 14,
+ "text": "È simile al ponce."
+},
+{
+ "num": 18,
+ "text": "Mormorio rabbioso del cane."
+},
+{
+ "num": 19,
+ "text": "__ da Lentini, noto poeta."
+},
+{
+ "num": 21,
+ "text": "La contea di Dover."
+},
+{
+ "num": 22,
+ "text": "Ha scritto testi per Lucio Battisti."
+},
+{
+ "num": 23,
+ "text": "Una santa e una pietra."
+},
+{
+ "num": 25,
+ "text": "È difficile mettersi in quelli altrui."
+},
+{
+ "num": 26,
+ "text": "La usa il calzolaio."
+},
+{
+ "num": 28,
+ "text": "La Mini che non è Cooper."
+},
+{
+ "num": 29,
+ "text": "Era Blue in una canzone."
+},
+{
+ "num": 31,
+ "text": "Negazione francese."
+},
+{
+ "num": 32,
+ "text": "Unità fisica del lavoro."
+},
+{
+ "num": 34,
+ "text": "Il secondo nell'ordine."
+}
+  ]
+}
+
+					
+					
+

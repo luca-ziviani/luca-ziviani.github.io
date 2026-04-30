@@ -1,28 +1,52 @@
 {
   "puzzles": [
     {
+      "id": "mini1",
+      "title": "Parole crociate piccolo n° 1",
+      "description": "Dimensioni: 10x12",
+      "file": "puzzle-mini1.json"
+    },
+    {
+      "id": "mini2",
+      "title": "Parole crociate piccolo n° 2",
+      "description": "Dimensioni: 10x12",
+      "file": "puzzle-mini2.json"
+    },
+    {
+      "id": "mini3",
+      "title": "Parole crociate piccolo n° 3",
+      "description": "Dimensioni: 10x12",
+      "file": "puzzle-mini3.json"
+    },
+    {
+      "id": "mini4",
+      "title": "Parole crociate piccolo n° 4",
+      "description": "Dimensioni: 10x12",
+      "file": "puzzle-mini4.json"
+    },
+    {
       "id": "SL1",
-      "title": "Parole crociate a schema libero",
-      "description": "Parole crociate a schema libero n° 1",
+      "title": "Parole crociate grande n°1",
+      "description": "Schema libero \n Dimensioni: 12x22",
       "file": "puzzle-SL1.json"
     },
     {
       "id": "SO1",
-      "title": "Parole crociate a schema ordinato",
-      "description": "Parole crociate a schema ordinato n° 1",
+      "title": "Parole crociate grande n°2",
+      "description": "Schema ordinato \n Dimensioni: 12x22",
       "file": "puzzle-SO1.json"
+    },
+    {
+      "id": "SO2",
+      "title": "Parole crociate grande n°3",
+      "description": "Schema ordinato \n Dimensioni: 12x22",
+      "file": "puzzle-SO2.json"
     },
     {
       "id": "SS1",
       "title": "Parole crociate senza schema",
-      "description": "Parole crociate senza schema n° 1",
+      "description": "Dimensioni: 12x22",
       "file": "puzzle-SS1.json"
-    },
-    {
-      "id": "SO2",
-      "title": "Parole crociate a schema ordinato",
-      "description": "Parole crociate a schema ordinato n° 2",
-      "file": "puzzle-SO2.json"
     }
   ]
 }

@@ -1,0 +1,401 @@
+{
+  "type": "classic",
+  "rows": 10,
+  "cols": 12,
+  "blocks": [
+    [0, 4],
+    [1, 9],
+    [2, 2],
+    [2, 8],
+    [2, 10],
+    [3, 1],
+    [3, 7],
+    [4, 0],
+    [4, 6],
+    [5, 5],
+    [5, 11],
+    [6, 4],
+    [6, 10],
+    [7, 1],
+    [7, 3],
+    [7, 9],
+    [8, 2],
+    [9, 7]
+  ],
+  "solution": [
+    "VARO.PORTICO",
+    "EMISSARIO.TR",
+    "IO.TARLO.M.A",
+    "O.MATTI.BEEF",
+    ".LIGIO.KARMA",
+    "LARGE.PERLA.",
+    "ATTI.LIBRO.G",
+    "R.O.TELAI.UN",
+    "VR.CALABRONE",
+    "ATELIER.ELIO"
+  ],
+  "cellNumbers": [
+    {
+    "row": 0,
+    "col": 0,
+    "num": 1
+    },
+    {
+    "row": 0,
+    "col": 1,
+    "num": 2
+    },
+    {
+    "row": 0,
+    "col": 2,
+    "num": 3
+    },
+    {
+    "row": 0,
+    "col": 3,
+    "num": 4
+    },
+    {
+    "row": 0,
+    "col": 5,
+    "num": 5
+    },
+    {
+    "row": 0,
+    "col": 6,
+    "num": 6
+    },
+    {
+    "row": 0,
+    "col": 7,
+    "num": 7
+    },
+    {
+    "row": 0,
+    "col": 8,
+    "num": 8
+    },
+    {
+    "row": 0,
+    "col": 10,
+    "num": 9
+    },
+    {
+    "row": 0,
+    "col": 11,
+    "num": 10
+    },
+    {
+    "row": 1,
+    "col": 0,
+    "num": 11
+    },
+    {
+    "row": 1,
+    "col": 4,
+    "num": 12
+    },
+    {
+    "row": 1,
+    "col": 10,
+    "num": 13
+    },
+    {
+    "row": 2,
+    "col": 0,
+    "num": 14
+    },
+    {
+    "row": 2,
+    "col": 3,
+    "num": 15
+    },
+    {
+    "row": 2,
+    "col": 9,
+    "num": 16
+    },
+    {
+    "row": 3,
+    "col": 2,
+    "num": 17
+    },
+    {
+    "row": 3,
+    "col": 8,
+    "num": 18
+    },
+    {
+    "row": 3,
+    "col": 10,
+    "num": 19
+    },
+    {
+    "row": 4,
+    "col": 1,
+    "num": 20
+    },
+    {
+    "row": 4,
+    "col": 7,
+    "num": 21
+    },
+    {
+    "row": 5,
+    "col": 0,
+    "num": 22
+    },
+    {
+    "row": 5,
+    "col": 6,
+    "num": 23
+    },
+    {
+    "row": 6,
+    "col": 0,
+    "num": 24
+    },
+    {
+    "row": 6,
+    "col": 5,
+    "num": 25
+    },
+    {
+    "row": 6,
+    "col": 11,
+    "num": 26
+    },
+    {
+    "row": 7,
+    "col": 4,
+    "num": 27
+    },
+    {
+    "row": 7,
+    "col": 10,
+    "num": 28
+    },
+    {
+    "row": 8,
+    "col": 0,
+    "num": 29
+    },
+    {
+    "row": 8,
+    "col": 1,
+    "num": 30
+    },
+    {
+    "row": 8,
+    "col": 3,
+    "num": 31
+    },
+    {
+    "row": 8,
+    "col": 9,
+    "num": 32
+    },
+    {
+    "row": 9,
+    "col": 0,
+    "num": 33
+    },
+    {
+    "row": 9,
+    "col": 8,
+    "num": 34
+    }
+  ],
+  "cluesAcross": [
+    {
+ "num": 1,
+ "text": "Il battesimo dello scafo."
+},
+{
+ "num": 5,
+ "text": "Un marciapiede coperto."
+},
+{
+ "num": 11,
+ "text": "Esce da un lago."
+},
+{
+ "num": 13,
+ "text": "In testa al treno."
+},
+{
+ "num": 14,
+ "text": "Una vittoria in casa."
+},
+{
+ "num": 15,
+ "text": "Scava gallerie nel legno."
+},
+{
+ "num": 17,
+ "text": "Sono usciti di senno."
+},
+{
+ "num": 18,
+ "text": "Segue roast nel menu."
+},
+{
+ "num": 20,
+ "text": "Fedele al dovere."
+},
+{
+ "num": 21,
+ "text": "Determina la reincarnazione nell'induismo."
+},
+{
+ "num": 22,
+ "text": "La L sulle T-shirt."
+},
+{
+ "num": 23,
+ "text": "La ricchezza presente nell'ostrica."
+},
+{
+ "num": 24,
+ "text": "Documenti con rilevanza giuridica."
+},
+{
+ "num": 25,
+ "text": "Quello elettronico non si sfoglia."
+},
+{
+ "num": 27,
+ "text": "Sono in fibra di carbonio in certe biciclette."
+},
+{
+ "num": 28,
+ "text": "Articolo che non precisa."
+},
+{
+ "num": 29,
+ "text": "La sigla di Verona."
+},
+{
+ "num": 31,
+ "text": "È più grosso della vespa."
+},
+{
+ "num": 33,
+ "text": "Ne escono i modelli della haute couture."
+},
+{
+ "num": 34,
+ "text": "Il Germano attore."
+}
+  ],
+  "cluesDown": [
+    {
+ "num": 1,
+ "text": "Un'antica città Etrusca."
+},
+{
+ "num": 2,
+ "text": "Un fatale uncino."
+},
+{
+ "num": 3,
+ "text": "Il prefisso iterativo."
+},
+{
+ "num": 4,
+ "text": "Prigionieri in pegno."
+},
+{
+ "num": 5,
+ "text": "Atto... di nascita."
+},
+{
+ "num": 6,
+ "text": "Rinforzi marginali."
+},
+{
+ "num": 7,
+ "text": "Scorre verso valle."
+},
+{
+ "num": 8,
+ "text": "Le sponde del Ticino."
+},
+{
+ "num": 9,
+ "text": "Commissario Tecnico."
+},
+{
+ "num": 10,
+ "text": "Una artefice di preziosi."
+},
+{
+ "num": 12,
+ "text": "Compose le Gymnopédies."
+},
+{
+ "num": 16,
+ "text": "Ha il becco giallo."
+},
+{
+ "num": 17,
+ "text": "Liquore sardo."
+},
+{
+ "num": 18,
+ "text": "Sa farlo solo l'elefante."
+},
+{
+ "num": 19,
+ "text": "Valuta i vaccini"
+},
+{
+ "num": 20,
+ "text": "Latino... in breve."
+},
+{
+ "num": 21,
+ "text": "Lo spiedino arabo."
+},
+{
+ "num": 22,
+ "text": "Farfalla in embrione."
+},
+{
+ "num": 23,
+ "text": "Santuario spagnolo."
+},
+{
+ "num": 25,
+ "text": "Diminutivo di Raffaele."
+},
+{
+ "num": 26,
+ "text": "Il prenome di Pompeo Magno."
+},
+{
+ "num": 27,
+ "text": "Il Mai cocktail."
+},
+{
+ "num": 28,
+ "text": "Con gli altri."
+},
+{
+ "num": 30,
+ "text": "Le separa la S."
+},
+{
+ "num": 31,
+ "text": "150 romani."
+},
+{
+ "num": 32,
+ "text": "Onde Lunghe."
+}
+  ]
+}
+
+
+
+

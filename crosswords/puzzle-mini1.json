@@ -1,0 +1,385 @@
+{
+  "type": "classic",
+  "rows": 10,
+  "cols": 12,
+  "blocks": [
+    [0, 0],
+    [0, 2],
+    [0, 8],
+    [1, 7],
+    [2, 0],
+    [2, 6],
+    [3, 5],
+    [3, 10],
+    [4, 3],
+    [4, 9],
+    [5, 2],
+    [5, 8],
+    [6, 1],
+    [6, 6],
+    [7, 5],
+    [7, 11],
+    [8, 4],
+    [9, 3],
+    [9, 9],
+    [9, 11]
+  ],
+  "solution": [
+    ".P.SFOGO.ONG",
+    "TOSCANI.ENEL",
+    ".MAINE.ADDIO",
+    "MARAT.PRUA.B",
+    "ATA.EREMI.RA",
+    "SE.CRETA.BOL",
+    "S.UNIX.TRAME",
+    "IVREA.SUORE.",
+    "MAIL.GORGONE",
+    "ANA.OSSEO.I."
+  ],
+  "cellNumbers": [
+    {
+    "row": 0,
+    "col": 1,
+    "num": 1
+    },
+    {
+    "row": 0,
+    "col": 3,
+    "num": 2
+    },
+    {
+    "row": 0,
+    "col": 4,
+    "num": 3
+    },
+    {
+    "row": 0,
+    "col": 5,
+    "num": 4
+    },
+    {
+    "row": 0,
+    "col": 6,
+    "num": 5
+    },
+    {
+    "row": 0,
+    "col": 9,
+    "num": 6
+    },
+    {
+    "row": 0,
+    "col": 10,
+    "num": 7
+    },
+    {
+    "row": 0,
+    "col": 11,
+    "num": 8
+    },
+    {
+    "row": 1,
+    "col": 0,
+    "num": 9
+    },
+    {
+    "row": 1,
+    "col": 2,
+    "num": 10
+    },
+    {
+    "row": 1,
+    "col": 8,
+    "num": 11
+    },
+    {
+    "row": 2,
+    "col": 1,
+    "num": 12
+    },
+    {
+    "row": 2,
+    "col": 7,
+    "num": 13
+    },
+    {
+    "row": 3,
+    "col": 0,
+    "num": 14
+    },
+    {
+    "row": 3,
+    "col": 6,
+    "num": 15
+    },
+    {
+    "row": 4,
+    "col": 0,
+    "num": 16
+    },
+    {
+    "row": 4,
+    "col": 4,
+    "num": 17
+    },
+    {
+    "row": 4,
+    "col": 5,
+    "num": 18
+    },
+    {
+    "row": 4,
+    "col": 10,
+    "num": 19
+    },
+    {
+    "row": 5,
+    "col": 0,
+    "num": 20
+    },
+    {
+    "row": 5,
+    "col": 3,
+    "num": 21
+    },
+    {
+    "row": 5,
+    "col": 9,
+    "num": 22
+    },
+    {
+    "row": 6,
+    "col": 2,
+    "num": 23
+    },
+    {
+    "row": 6,
+    "col": 7,
+    "num": 24
+    },
+    {
+    "row": 6,
+    "col": 8,
+    "num": 25
+    },
+    {
+    "row": 7,
+    "col": 0,
+    "num": 26
+    },
+    {
+    "row": 7,
+    "col": 1,
+    "num": 27
+    },
+    {
+    "row": 7,
+    "col": 6,
+    "num": 28
+    },
+    {
+    "row": 8,
+    "col": 0,
+    "num": 29
+    },
+    {
+    "row": 8,
+    "col": 5,
+    "num": 30
+    },
+    {
+    "row": 9,
+    "col": 0,
+    "num": 31
+    },
+    {
+    "row": 9,
+    "col": 4,
+    "num": 32
+}
+  ],
+  "cluesAcross": [
+    {
+ "num": 2,
+ "text": "Fa sbollire l'ira."
+},
+{
+ "num": 6,
+ "text": "Le associazioni senza fine di lucro."
+},
+{
+ "num": 9,
+ "text": "Tra gli Emiliani e i Laziali."
+},
+{
+ "num": 11,
+ "text": "Un'azienda con le centrali."
+},
+{
+ "num": 12,
+ "text": "È il più a est degli USA."
+},
+{
+ "num": 13,
+ "text": "Un triste commiato."
+},
+{
+ "num": 14,
+ "text": "Morì prima di Danton e Robespierre."
+},
+{
+ "num": 15,
+ "text": "La punta del natante."
+},
+{
+ "num": 16,
+ "text": "I non docenti a scuola (sigla)."
+},
+{
+ "num": 17,
+ "text": "Luoghi per asceti."
+},
+{
+ "num": 19,
+ "text": "Dio degli Egizi."
+},
+{
+ "num": 20,
+ "text": "Si usa per ipotizzare."
+},
+{
+ "num": 21,
+ "text": "L'isola del re Minosse."
+},
+{
+ "num": 22,
+ "text": "La Femke velocista olandese."
+},
+{
+ "num": 23,
+ "text": "Un diffuso sistema operativo."
+},
+{
+ "num": 24,
+ "text": "Intrecci romanzeschi."
+},
+{
+ "num": 26,
+ "text": "Città piemontese sulla Dora Baltea."
+},
+{
+ "num": 28,
+ "text": "Prestano assistenza in alcuni ospedali."
+},
+{
+ "num": 29,
+ "text": "La posta a Manchester."
+},
+{
+ "num": 30,
+ "text": "Un mostro come Medusa."
+},
+{
+ "num": 31,
+ "text": "Identità di dosi."
+},
+{
+ "num": 32,
+ "text": "Il tessuto più duro."
+}
+  ],
+  "cluesDown": [
+    {
+ "num": 1,
+ "text": "Medicinali da spalmare."
+},
+{
+ "num": 2,
+ "text": "Uno strascico di spuma."
+},
+{
+ "num": 3,
+ "text": "I Bersaglieri ne sono una specialità."
+},
+{
+ "num": 4,
+ "text": "Uno sulla sterlina."
+},
+{
+ "num": 5,
+ "text": "In mezzo alla prigione."
+},
+{
+ "num": 6,
+ "text": "Si infrange ma non lascia cocci."
+},
+{
+ "num": 7,
+ "text": "I puntini a fior di pelle."
+},
+{
+ "num": 8,
+ "text": "Il riscaldamento che preoccupa."
+},
+{
+ "num": 10,
+ "text": "La Simeoni del salto in alto."
+},
+{
+ "num": 11,
+ "text": "Cesare li vinse in Gallia."
+},
+{
+ "num": 13,
+ "text": "Proteggevano gli antichi guerrieri."
+},
+{
+ "num": 14,
+ "text": "Una frase sentenziosa."
+},
+{
+ "num": 15,
+ "text": "Se ne fan bottiglie."
+},
+{
+ "num": 18,
+ "text": "La R in INRI."
+},
+{
+ "num": 19,
+ "text": "Gli Europei di Bucarest."
+},
+{
+ "num": 21,
+ "text": "Un organo di consulenza del governo."
+},
+{
+ "num": 22,
+ "text": "A carte, vince quando vuole."
+},
+{
+ "num": 23,
+ "text": "Palmipede nordico bianco e nero."
+},
+{
+ "num": 25,
+ "text": "Uccise Giordano Bruno."
+},
+{
+ "num": 27,
+ "text": "Tra Ludwig e Beethoven."
+},
+{
+ "num": 28,
+ "text": "Invocazione d'aiuto."
+},
+{
+ "num": 30,
+ "text": "Lo Scotti del piccolo schermo."
+}
+  ]
+}
+
+
+
+
