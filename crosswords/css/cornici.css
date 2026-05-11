@@ -1,0 +1,63 @@
+body.mode-cornici .clues-columns {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+body.mode-cornici .crossword {
+  border-color: #0f4c75;
+}
+
+body.mode-cornici .cell.frame-cell:hover {
+  background: #dceeff;
+}
+
+
+
+body.mode-cornici .cell.even-frame {
+  background: #d8d8d8;
+}
+
+body.mode-cornici .cell.frame-active {
+  background: #e6e6fa;
+}
+
+body.mode-cornici .cell.frame-active.even-frame {
+  background: #cacadb;
+}
+
+/* Solved state: green cells */
+body.mode-cornici .cell.solved-cell {
+  background: #d4edda;
+}
+body.mode-cornici .cell.solved-cell.even-frame {
+  background: #b7ccbc;
+}
+body.mode-cornici .cell.solved-cell .letter {
+  color: #155724;
+}
+
+
+body.mode-cornici .cell.selected {
+  background: #8fbfff;
+  box-shadow: inset 0 0 0 2px #0f72b2;
+}
+
+body.mode-cornici .cell.frame-start .cell-num {
+  color: #0a3251;
+}
+
+body.mode-cornici .clues-panel {
+  max-width: none;
+}
+
+body.mode-cornici .clue-num {
+  color: #0f4c75;
+  font-weight: 700;
+}
+
+.cell.is-block {
+  background: #1a1a1a;
+  cursor: default;
+  pointer-events: none;
+}
+

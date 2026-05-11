@@ -1,0 +1,101 @@
+{
+  "type": "cornici",
+  "rows": 13,
+  "cols": 13,
+  "solution": [
+    "RECENSITOLOME",
+    "OMESSERECIOTO",
+    "TALLOVESPRITZ",
+    "STEREOMARCHIO",
+    "ESTERIBANCARD",
+    "NEONATALEOBOI",
+    "ASSISI.ARNICA",
+    "MOICANITICTAC",
+    "ONNIVORIGIARA",
+    "HANSELEGRETEL",
+    "ARETINOCRAMPI",
+    "LUMINODESSERT",
+    "KOALACICERONE"
+  ],
+  "cluesAcross": [
+    {
+    "num": 1,
+    "text": "Giudicato da un critico - Si affaccia sul golfo di Guinea."
+    },
+    {
+    "num": 2,
+    "text": "Escluse per dimenticanza - Un vino rosso veronese."
+    },
+    {
+    "num": 3,
+    "text": "C'è quel dei Tali - L'amore della miss - Aperitivo a base di prosecco, bitter e selz."
+    },
+    {
+    "num": 4,
+    "text": "Un impianto sonoro - Il contrassegno di fabbrica."
+    },
+    {
+    "num": 5,
+    "text": "Sposó Assuero - Codice da bonifici - È smart nei decoder."
+    },
+    {
+    "num": 6,
+    "text": "La vita appena venuti al mondo - Sono simili ai clarinetti."
+    },
+    {
+    "num": 7,
+    "text": "Visitatissima città umbra - Erba medica per creme lenitive."
+    },
+    { 
+    "num": 8,
+    "text": "Di loro è famoso l'ultimo - Il rumore del tempo che passa."
+    },
+    {
+    "num": 9,
+    "text": "Che mangiano di tutto - Panciuto recipiente di terracotta."
+    },
+    {
+    "num": 10,
+    "text": "Seguono dei sassolini bianchi in una celebre fiaba."
+    },
+    {
+    "num": 11,
+    "text": "Un concittadino del Petrarca - Possono bloccare i muscoli."
+    },
+    {
+    "num": 12,
+    "text": "Emette un fioco chiarore - Le ultime portate del pranzo."
+    },
+    {
+    "num":   13,
+    "text": "Animale ghiotto di eucalipto - Pronunciò celebri orazioni."
+      }
+  ],
+  "cluesFrame": [
+    {
+      "num": 1,
+      "text": "Ama un soprano a teatro - Frinisce in campagna - È posto a Nord del Texas - Il consigliere d'Agamennone - Ricchi patrimoni - Considerava la Terra immobile - I segni degli astrologi."
+    },
+    {
+      "num": 2,
+      "text": "Il Sandro che chiedeva la linea ad Ameri - Lo è la voce dell'afono - Sedate con la forza - Li ricevono gli sposi - L'isola veneziana dei vetri - La hanno solo alcuni cambi - Il signore di antico stampo."
+    },
+    {
+      "num": 3,
+      "text": "Storici eventi siciliani - Ogni organismo vive bene nel proprio - Il Guglielmo inventore - Wimbledon ne è il regno - Uccide Desdemona."
+    },
+    {
+      "num": 4,
+      "text": "Grigiastro, plumbeo - Lo Chagall tra i pittori - Il portiere del Grand Hotel - Toccati nell'interessi."
+    },
+    {
+      "num": 5,
+      "text": "Un nemico di Batman - Discorso vago, ingarbugliato - Scrisse le biografie di grandi pittori."
+    },
+    {
+      "num": 6,
+      "text": "I Romani la diffusero in tutta l'Europa."
+    }
+  ]
+}
+

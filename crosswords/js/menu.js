@@ -1,3 +1,13 @@
+/**
+ * Copyright 2024 Luca Ziviani
+ * 
+ *  - fetch the list of puzzles from puzzles-manifest.json
+ *  - display the list of puzzles as links to play.html?id=PUZZLE_ID
+ *  - if the fetch fails, display an error message
+ * 
+ * Note: this file is only used in crosswords.html, not in play.html
+ */
+
 (function () {
   const listEl = document.getElementById("puzzle-list");
   const errEl = document.getElementById("menu-error");

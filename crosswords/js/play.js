@@ -17,7 +17,7 @@
  */
 
 (function () {
-  // ── DOM references ────────────────────────────────────────────────────────
+  // ── DOM references of the page play.html ──────────────────────────────────
   const ui = {
     gridEl:       document.querySelector(".crossword"),
     btnOriz:      document.getElementById("btn-orizz"),
@@ -29,13 +29,11 @@
     cluesDownEl:   document.getElementById("clues-down"),
   };
 
-  // ── Helpers ───────────────────────────────────────────────────────────────
-
-  /**
-   * Show a fatal load error: clear the grid and display a message.
-   * We always fall back to the classic empty-grid rendering so the page
-   * at least looks consistent.
-   */
+  // ── Helpers for errors ────────────────────────────────────────────────────
+  
+  // Show a fatal load error: clear the grid and display a message.
+  // We always fall back to the classic empty-grid rendering so the page
+  // at least looks consistent.
   function failLoad(message) {
     ui.loadHint.textContent = message;
     ui.playTitle.textContent = "Cruciverba";
@@ -49,10 +47,8 @@
       });
   }
 
-  /**
-   * Allowlist check: only plain filenames like "puzzle-1.json" are accepted.
-   * Prevents path-traversal attacks (e.g. "../../etc/passwd").
-   */
+  // Allowlist check: only plain filenames like "puzzle-1.json" are accepted.
+  // Prevents path-traversal attacks (e.g. "../../etc/passwd").
   function safeFileName(name) {
     if (!name || typeof name !== "string") return null;
     return /^[a-zA-Z0-9._-]+\.json$/.test(name) ? name : null;
@@ -67,12 +63,16 @@
   }
 
   // ── Load pipeline ─────────────────────────────────────────────────────────
+  // This is the list of operations to searce the json file,
+  //  import the mode module, and initialise the game.
   fetch("puzzles-manifest.json")
+    // Check if  the manifest is corectly opened.
     .then((r) => {
       if (!r.ok) throw new Error("manifest");
       return r.json();
     })
 
+    // Find the manifest entry for the requested puzzle and fetch its JSON file.
     .then((manifest) => {
       const entry = manifest.puzzles.find((p) => p.id === puzzleId);
       if (!entry) throw new Error("unknown");
@@ -84,29 +84,35 @@
       ui.playTitle.textContent = entry.title;
       document.title = entry.title + " – Cruciverba";
 
+      // Parse the JSON file for the puzzle;
+      // this is passed to the mode module for validation and normalisation.
       return fetch(file).then((r) => {
         if (!r.ok) throw new Error("puzzle");
         return r.json();
       });
     })
 
+    // Derive the mode from the JSON and dynamically import the module.
     .then((rawData) => {
-      // Derive the mode from the JSON; default to "classic" for backwards
-      // compatibility with puzzles that pre-date the "type" field.
+      // Set default to "classic" 
       const type = (typeof rawData.type === "string" && rawData.type.trim())
         ? rawData.type.trim()
         : "classic";
 
+      // "type" = "classic" | "cornici" | "senza-schema" (must match a modes/*.js file)
+      // Dynamically import the mode module.
       return import(`./modes/${type}.js`).then((mod) => ({ mod, rawData }));
     })
 
+    // mod is the mode module (JS file), rawData is the original JSON from the file.
+    // Let the mode validate and normalise the data, then init the game.
     .then(({ mod, rawData }) => {
-      // Let the mode validate and normalise its own JSON format.
       const data = mod.normalize(rawData);
       ui.loadHint.textContent = "";
       mod.init(data, ui);
     })
 
+    // Error handling
     .catch((err) => {
       if (err?.message === "unknown") {
         failLoad("Cruciverba non trovato. Torna al menu e scegli un'opzione valida.");

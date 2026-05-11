@@ -47,6 +47,18 @@
       "title": "Parole crociate senza schema",
       "description": "Dimensioni: 12x22",
       "file": "puzzle-SS1.json"
+    },
+    {
+      "id": "cornici1",
+      "title": "Cornici concentriche n°1",
+      "description": "Cornici concentriche classiche",
+      "file": "puzzle-cornici1.json"
+    },
+    {
+      "id": "cornici2",
+      "title": "Cornici concentriche n°2",
+      "description": "Cornice concentriche con orizzontali alla rinfusa. DIFFICILE.",
+      "file": "puzzle-cornici2.json"
     }
   ]
 }
