@@ -8,6 +8,8 @@
     <title>
         Luca Ziviani
     </title>
+    <link rel="alternate" hreflang="en" href="index.html">
+    <link rel="alternate" hreflang="it" href="it/index.html">
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
@@ -15,6 +17,9 @@
         <header>
             <div>
                 <h1>Luca Ziviani</h1>
+                <p style="margin: 0.25rem 0 0; font-size: 0.95rem;">
+                    <a href="index.html" aria-current="page">EN</a> · <a href="it/index.html">IT</a>
+                </p>
                 <nav class="main-menu">
                     <a href="cv.html"><h3>Curriculum vitae</h3></a>
                     <a href="publications.html"><h3>Publications</h3></a>
@@ -65,5 +70,14 @@
                 <b>Github:</b> <a href="https://github.com/luca-ziviani"> luca-ziviani </a>
             </p>
         </footer>
+        <script>
+            (function () {
+                var currentPath = window.location.pathname.toLowerCase();
+                var isItalianBrowser = navigator.language && navigator.language.toLowerCase().startsWith("it");
+                if (isItalianBrowser && currentPath !== "/it/index.html" && !currentPath.includes("/it/")) {
+                    window.location.replace("it/index.html");
+                }
+            })();
+        </script>
     </body>
 </html>
