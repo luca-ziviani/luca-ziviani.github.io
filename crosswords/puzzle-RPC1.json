@@ -1,0 +1,261 @@
+{
+    "type": "ricerca", 
+    "rows": 12,
+    "cols": 14,
+    "solution": [
+    "...TRAIANO.AC.",
+    "CAVOUR.RAPALLO",
+    "OBITORIO.E.TAL",
+    "SCATTO.NARTECE",
+    "T.REAGENTE.ASO",
+    "OPEN.AREATO.OS",
+    "SUGHERO..TRANI",
+    "OLGA.SINCERO.T",
+    ".PIMPI.UA.ERMA",
+    "RIO.E.SONANTE.",
+    "UT.ARROTONDARE",
+    "MOLO.CLOACA.O."
+  ],
+  "blocks": [[0, 0],
+ [0, 1],
+ [0, 2],
+ [0, 10],
+ [0, 13],
+ [1, 6],
+ [2, 8],
+ [2, 10],
+ [3, 6],
+ [4, 1],
+ [4, 10],
+ [5, 4],
+ [5, 11],
+ [6, 7],
+ [6, 8],
+ [7, 4],
+ [7, 12],
+ [8, 0],
+ [8, 6],
+ [8, 9],
+ [9, 3],
+ [9, 5],
+ [9, 13],
+ [10, 2],
+ [11, 4],
+ [11, 11],
+ [11, 13]
+],  
+    "cluesAcross": [
+{
+ "num": 1,
+ "text": "Un imperatore romano"
+},
+{
+ "num": 7,
+ "text": "Le separa la B"
+},
+{
+ "num": 9,
+ "text": "Camillo Benso, conte di __"
+},
+{
+ "num": 12,
+ "text": "Una località della Riviera"
+},
+{
+ "num": 14,
+ "text": "Ha frigoriferi per le salme"
+},
+{
+ "num": 15,
+ "text": "Il famoso signor Dei Tali"
+},
+{
+ "num": 16,
+ "text": "Una reazione improvvisa"
+},
+{
+ "num": 17,
+ "text": "Il vestibolo delle basiliche paleocristiane e bizantine"
+},
+{
+ "num": 19,
+ "text": "Sostanza per analisi"
+},
+{
+ "num": 21,
+ "text": "Bagna l'Ascolano"
+},
+{
+ "num": 22,
+ "text": "Lo space non chiuso"
+},
+{
+ "num": 24,
+ "text": "Lo è un salotto ben ventilato"
+},
+{
+ "num": 26,
+ "text": "La bocca di Cicerone"
+},
+{
+ "num": 27,
+ "text": "Materia prima per turaccioli"
+},
+{
+ "num": 28,
+ "text": "Città fra Bari e Barletta"
+},
+{
+ "num": 30,
+ "text": "Comune nome russo di donna"
+},
+{
+ "num": 31,
+ "text": "Non dice una cosa per un'altra"
+},
+{
+ "num": 34,
+ "text": "Il maialino di Winnie the Pooh"
+},
+{
+ "num": 36,
+ "text": "Il dittongo di Pasquale"
+},
+{
+ "num": 37,
+ "text": "Testa marmorea su pilastro"
+},
+{
+ "num": 39,
+ "text": "Una via di Venezia"
+},
+{
+ "num": 40,
+ "text": "Così è il denaro spicciolo"
+},
+{
+ "num": 42,
+ "text": "Do __ des, frase latina"
+},
+{
+ "num": 43,
+ "text": "Smussare gli spigoli"
+},
+{
+ "num": 45,
+ "text": "Un punto di approdo"
+},
+{
+ "num": 46,
+ "text": "Una fogna a cielo aperto"
+}],
+  "cluesDown": [
+    {
+ "num": 1,
+ "text": "Una squadra di calcio inglese"
+},
+{
+ "num": 2,
+ "text": "È dentata negli ingranaggi"
+},
+{
+ "num": 3,
+ "text": "Attribuirsi senza merito"
+},
+{
+ "num": 4,
+ "text": "Un fratello di Mosè"
+},
+{
+ "num": 5,
+ "text": "Napoli sulle targhe"
+},
+{
+ "num": 6,
+ "text": "Furono popolari quelle di Lehár"
+},
+{
+ "num": 7,
+ "text": "La vedova compagna dell'ispettore Ginko in Diabolik"
+},
+{
+ "num": 8,
+ "text": "Si suona con una sola mano"
+},
+{
+ "num": 9,
+ "text": "Salato per chi deve pagare"
+},
+{
+ "num": 10,
+ "text": "Le nozioni di base"
+},
+{
+ "num": 11,
+ "text": "Ha un famoso Carnevale"
+},
+{
+ "num": 13,
+ "text": "Caratterizza certi semi"
+},
+{
+ "num": 18,
+ "text": "Personale scolastico non docente (sigla)"
+},
+{
+ "num": 20,
+ "text": "Autori di gesta"
+},
+{
+ "num": 23,
+ "text": "Vi parla il predicatore"
+},
+{
+ "num": 25,
+ "text": "Spaventosa a vedersi"
+},
+{
+ "num": 29,
+ "text": "Attraversa il torace"
+},
+{
+ "num": 32,
+ "text": "Uno sport che non richiede attrezzi"
+},
+{
+ "num": 33,
+ "text": "La barchetta dei Moicani"
+},
+{
+ "num": 35,
+ "text": "Il segno per moltiplicare"
+},
+{
+ "num": 38,
+ "text": "Puro e schietto"
+},
+{
+ "num": 39,
+ "text": "Se ne inzuppano i babà"
+},
+{
+ "num": 40,
+ "text": "La nota... fra le stelle"
+},
+{
+ "num": 41,
+ "text": "Associazione Nazionale Carabinieri"
+},
+{
+ "num": 43,
+ "text": "Il babbo le ha diverse"
+},
+{
+ "num": 44,
+ "text": "Nell'arco e nelle frecce"
+}
+  ]
+}
+
+
+
